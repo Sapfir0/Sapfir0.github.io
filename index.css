@@ -1,0 +1,28 @@
+body {
+  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+  font-weight: 600;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+.solutions {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+a {
+  background-color: rgba(14, 166, 100, 255);
+  border-radius: 5px;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 10px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+}

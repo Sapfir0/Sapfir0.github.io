@@ -5,7 +5,7 @@ export function ActivityParam({ title, icon, value, suffix }: {
   title: string,
   value: string | number,
   suffix?: string
-  icon: React.ReactElement
+  icon?: React.ReactElement
 }) {
   return <Box
     sx={{

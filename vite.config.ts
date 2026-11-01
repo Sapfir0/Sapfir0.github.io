@@ -9,6 +9,5 @@ export default defineConfig({
     analyzer({ analyzerPort: 1234 }),
     react(),
     babel({ presets: [reactCompilerPreset()] })
-  ],
-  base: '/hiking-storage/'
+  ]
 });

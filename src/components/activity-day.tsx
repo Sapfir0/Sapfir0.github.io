@@ -4,8 +4,6 @@ import type { TDay } from '../types.ts';
 import { ActivityParam } from './activity-paramater.tsx';
 import MovingIcon from '@mui/icons-material/Moving';
 import TrendingDownIcon from '@mui/icons-material/TrendingDown';
-import ExpandLessIcon from '@mui/icons-material/ExpandLess';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export function ActivityDay({ day }: {day: TDay}) {
   return <Card sx={{
@@ -17,8 +15,8 @@ export function ActivityDay({ day }: {day: TDay}) {
       <ActivityParam title="Distance" value={day.distance} suffix="km" icon={<HikingIcon/>}/>
       <ActivityParam title="Ascent" value={day.accent} suffix="m" icon={<MovingIcon/>}/>
       <ActivityParam title="Descent" value={day.descent} suffix="m" icon={<TrendingDownIcon/>}/>
-      <ActivityParam title="Max elevation" value={day.maxElevation} suffix="m" icon={<ExpandLessIcon/>}/>
-      <ActivityParam title="Min elevation" value={day.minElevation} suffix="m" icon={<ExpandMoreIcon/>}/>
+      <ActivityParam title="Max elevation" value={day.maxElevation} suffix="m"/>
+      <ActivityParam title="Min elevation" value={day.minElevation} suffix="m"/>
 
     </CardContent>
   </Card>;

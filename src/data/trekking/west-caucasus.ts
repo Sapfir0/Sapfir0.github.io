@@ -67,5 +67,7 @@ export const westCaucasus: TTrekking = {
   mountainSystem: 'Caucasus',
   image: image,
   days: days,
-  wikiLoc: 'https://www.wikiloc.com/hiking-trails/through-mountains-to-sea-failed-western-caucasus-november-2024-3-days-251925660'
+  wikiLoc:
+    'https://www.wikiloc.com/hiking-trails/through-mountains-to-sea-failed-western-caucasus-november-2024-3-days-251925660',
+  withTent: true
 };

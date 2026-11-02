@@ -43,7 +43,7 @@ const days: TDay[] = [
     link: 'https://connect.garmin.com/app/activity/20217361844'
   },
   {
-    distance: 18.00,
+    distance: 18.0,
     accent: 284,
     descent: 191,
     minElevation: 266,
@@ -72,5 +72,6 @@ export const khibinyTrip: TTrekking = {
   country: Country.Russia,
   wikiLoc: 'https://www.wikiloc.com/hiking-trails/hibini-6-days-krug-po-khibinam-249967556',
   image: khibiny,
-  days
+  days,
+  withTent: true
 };

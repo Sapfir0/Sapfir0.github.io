@@ -15,7 +15,9 @@ export const hiking: THiking[] = [
     district: 'Valencia',
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/pr-cv-78-circle-around-xativa-291886819',
     description: '',
-    image: cv78
+    image: cv78,
+    temperature: 18.9,
+    date: 'Oct. 2026'
   },
   {
     name: 'Montesa to Enguera',
@@ -25,7 +27,9 @@ export const hiking: THiking[] = [
     country: Country.Spain,
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/montesa-to-enguera-293393523',
     description: '',
-    image: montesa
+    image: montesa,
+    temperature: 15.0,
+    date: 'Oct. 2026'
   },
   {
     name: 'Jérica Hiking',
@@ -35,7 +39,9 @@ export const hiking: THiking[] = [
     country: Country.Spain,
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/jerica-hiking-293392303',
     description: '',
-    image: jerica
+    image: jerica,
+    temperature: 27.2,
+    date: 'Sep. 2026'
   },
   {
     name: 'Hallasan mountain - Seongpanak to Gwaneumsa',
@@ -45,7 +51,9 @@ export const hiking: THiking[] = [
     district: 'Jeju',
     wikiLoc: 'https://es.wikiloc.com/rutas-carrera-por-montana/run-inwangsan-and-bugaksan-mountains-263841529',
     description: '',
-    image: hallasan
+    image: hallasan,
+    temperature: 15.6,
+    date: 'Apr. 2026'
   },
   {
     name: 'Two viewpoints in Vang Vieng | Silver Cliff, Pha Nguen',
@@ -55,7 +63,9 @@ export const hiking: THiking[] = [
     district: 'Vang Vieng',
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/two-viewpoints-in-vang-vieng-251679232',
     description: '',
-    image: laos
+    image: laos,
+    temperature: 24.4,
+    date: 'Dec. 2025'
   },
   ...russianHikes
 ] as const;

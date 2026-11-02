@@ -46,7 +46,7 @@ const perDays: TDay[] = [
     link: 'https://connect.garmin.com/app/activity/19758646763'
   },
   {
-    distance: 9.10,
+    distance: 9.1,
     accent: 841,
     descent: 45,
     minElevation: 1972,
@@ -97,5 +97,6 @@ export const arhyzTrip: TTrekking = {
   mountainSystem: 'Caucasus, Arhyz',
   image: arhyz,
   days: perDays,
-  link: 'arhyz'
+  link: 'arhyz',
+  withTent: true
 };

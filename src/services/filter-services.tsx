@@ -13,7 +13,8 @@ export const REGIONS: TFilter[] = [
     label: 'Asia',
     filter: (hike) => AsiaCountries.includes(hike.country as AsianCountries),
     defaultSelected: true
-  }, {
+  },
+  {
     label: 'Russia',
     filter: (hike) => hike.country === Russia.Russia,
     defaultSelected: true

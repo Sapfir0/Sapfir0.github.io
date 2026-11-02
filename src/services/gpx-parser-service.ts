@@ -15,6 +15,5 @@ export function parse(path: string) {
       if (error) throw error;
 
       return parsedFile.toGeoJSON();
-
     });
 }

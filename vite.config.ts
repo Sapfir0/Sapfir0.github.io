@@ -5,6 +5,6 @@ import { analyzer } from 'vite-bundle-analyzer';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.GITHUB_ACTIONS ? '/hiking-storage/' : '/',
+  base: '/',
   plugins: [analyzer({ analyzerPort: 1234 }), react(), babel({ presets: [reactCompilerPreset()] })]
 });

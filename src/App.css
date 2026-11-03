@@ -1,0 +1,21 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.app__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.app__tabs {
+  border-bottom: 1px solid var(--color-border);
+}
+
+@media (max-width: 600px) {
+  .app {
+    gap: 16px;
+  }
+}

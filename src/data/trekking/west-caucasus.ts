@@ -1,5 +1,4 @@
 import { Country } from '../../const.ts';
-import image from './images/west-caucasus.jpeg';
 import { type TDay, type TTrekking } from '../../types.ts';
 
 // 42.55 + 38.2
@@ -66,7 +65,7 @@ export const westCaucasus: TTrekking = {
   country: Country.Russia,
   district: 'Krasnodar Krai',
   mountainSystem: 'Caucasus',
-  image: image,
+  image: '/trekking/west-caucasus.jpeg',
   days: days,
   wikiLoc:
     'https://www.wikiloc.com/hiking-trails/through-mountains-to-sea-failed-western-caucasus-november-2024-3-days-251925660',

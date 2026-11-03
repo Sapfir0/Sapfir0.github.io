@@ -1,10 +1,15 @@
 import { type Country, TagFilter } from './const.ts';
 
-export type TFilter = {
-  label: TagFilter;
+export type TRegion = 'Europe' | 'Asia' | 'Russia';
+
+export type TFilter<TLabel extends string = TRegion | TagFilter> = {
+  label: TLabel;
   filter: (data: TActivity) => boolean;
   defaultSelected?: boolean;
 };
+
+export type TRegionFilter = TFilter<TRegion>;
+export type TTagFilter = TFilter<TagFilter>;
 
 export type TDay = {
   distance: number;

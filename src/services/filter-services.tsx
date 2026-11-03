@@ -1,10 +1,10 @@
 import { AsianCountries, EuropeanCountries, Russia, TagFilter } from '../const.ts';
-import { type TFilter } from '../types.ts';
+import { type TRegionFilter, type TTagFilter } from '../types.ts';
 
 const EUCountries = Object.values(EuropeanCountries);
 const AsiaCountries = Object.values(AsianCountries);
 
-export const REGIONS: TFilter[] = [
+export const REGIONS: TRegionFilter[] = [
   {
     label: 'Europe',
     filter: (hike) => EUCountries.includes(hike.country as EuropeanCountries),
@@ -22,7 +22,7 @@ export const REGIONS: TFilter[] = [
   }
 ];
 
-export const TAGS: Record<TagFilter, TFilter> = {
+export const TAGS: Record<TagFilter, TTagFilter> = {
   [TagFilter.HighMountains]: {
     label: TagFilter.HighMountains,
     filter: (hike) => hike.mountainSystem === 'Caucasus',

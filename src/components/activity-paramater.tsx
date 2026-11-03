@@ -16,14 +16,18 @@ export function ActivityParam({
     <Box
       sx={{
         display: 'inline-flex',
+        alignItems: 'center',
         gap: '5px'
       }}
     >
       {icon}
       <div>
-        <Typography>{title}</Typography>
-        <Typography>
-          {value} {suffix ? suffix : undefined}
+        <Typography variant="caption" color="text.secondary" component="div">
+          {title}
+        </Typography>
+        <Typography variant="body2" component="div">
+          {value}
+          {suffix ? ` ${suffix}` : ''}
         </Typography>
       </div>
     </Box>

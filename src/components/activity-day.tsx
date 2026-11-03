@@ -10,7 +10,7 @@ export function ActivityDay({ day }: { day: TDay }) {
     <Card
       sx={{
         borderRadius: '10px',
-        boxShadow: ' -8px -4px 20px -2px rgba(0, 0, 0, 0.5);',
+        boxShadow: '0 4px 16px rgba(0, 0, 0, 0.08)',
         height: '100%'
       }}
     >

@@ -1,7 +1,7 @@
 {
   "name": "hiking-storage",
   "private": true,
-  "homepage": "https://Sapfir0.github.io",
+  "homepage": "https://Sapfir0.github.io/hiking-storage",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -10,6 +10,7 @@
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "postbuild": "node scripts/postbuild.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -18,13 +19,11 @@
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^9.5.0",
     "@mui/material": "^9.5.0",
-    "@types/react-router-dom": "^5.3.3",
     "@we-gold/gpxjs": "^1.2.1",
     "json-schema-to-typescript": "^16.0.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "react-router": "^8.4.0",
-    "react-router-dom": "^7.18.4"
+    "react-router": "^8.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",

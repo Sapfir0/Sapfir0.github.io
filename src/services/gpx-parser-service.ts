@@ -1,19 +1,17 @@
 import { parseGPX } from '@we-gold/gpxjs';
 
-export function parse(path: string) {
-  fetch(path)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('Failed to fetch the file');
-      }
-      return response.text();
-    })
-    .then((data) => {
-      const [parsedFile, error] = parseGPX(data);
+export async function parse(path: string) {
+  const response = await fetch(path);
 
-      // Or use a try catch to verify
-      if (error) throw error;
+  if (!response.ok) {
+    throw new Error(`Failed to fetch the GPX file: ${response.status} ${response.statusText}`);
+  }
 
-      return parsedFile.toGeoJSON();
-    });
+  const [parsedFile, error] = parseGPX(await response.text());
+
+  if (error) {
+    throw error;
+  }
+
+  return parsedFile.toGeoJSON();
 }

@@ -1,9 +1,5 @@
 import { Country } from '../../const.ts';
-import petaarvi from './images/petaarvi.jpg';
-import orekhovo from './images/orekhovo.jpg';
-import kapeaasalmi from './images/kapeaasalmi.jpg';
 import { type THiking } from '../../types.ts';
-import yastrebinoe from './images/yastrebinoe.jpg';
 
 export const russianHikes: THiking[] = [
   {
@@ -14,7 +10,7 @@ export const russianHikes: THiking[] = [
     district: 'Leningrad oblast',
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/orechovo-circle-kruzhok-cherez-polianu-pkt-252718926',
     description: '',
-    image: orekhovo,
+    image: '/hiking/orekhovo.jpg',
     temperature: -3.9,
     date: new Date(2024, 11) // 'Dec. 2024'
   },
@@ -26,7 +22,7 @@ export const russianHikes: THiking[] = [
     district: 'Leningrad oblast',
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/pettarvi-circle-petiaiarvi-i-ozera-berestianoe-i-dubovoe-253927160',
     description: '',
-    image: petaarvi,
+    image: '/hiking/petaarvi.jpg',
     withTent: true,
     temperature: 4.4,
     date: new Date(2025, 2) // 'March 2025'
@@ -39,7 +35,7 @@ export const russianHikes: THiking[] = [
     district: 'Leningrad oblast',
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/kapeasalmi-to-kuznechnoe-len-oblast-251923715',
     description: '',
-    image: kapeaasalmi,
+    image: '/hiking/kapeaasalmi.jpg',
     withTent: true,
     temperature: 16.8,
     date: new Date(2025, 5) // 'June 2025'
@@ -52,7 +48,7 @@ export const russianHikes: THiking[] = [
     district: 'Leningrad Oblast',
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/yastrebinoe-lake-hike-249988191',
     description: '',
-    image: yastrebinoe,
+    image: '/hiking/yastrebinoe.jpg',
     withTent: true,
     temperature: 17.1,
     date: new Date(2025, 7) //'Aug. 2025'

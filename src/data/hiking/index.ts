@@ -1,13 +1,6 @@
 import { Country } from '../../const.ts';
 import { russianHikes } from './russian-hikes.ts';
 import { type THiking } from '../../types.ts';
-import cv78 from './images/cv78.jpeg';
-import hallasan from './images/hallasan.jpeg';
-import laos from './images/laos.jpeg';
-import montesa from './images/montesa.jpeg';
-import jerica from './images/jerica.jpg';
-import segart from './images/mola-de-segart.jpeg';
-import sary from './images/sary.jpeg';
 
 export const hiking: THiking[] = [
   {
@@ -17,7 +10,7 @@ export const hiking: THiking[] = [
     country: Country.Spain,
     district: 'Valencia',
     description: '',
-    image: segart,
+    image: '/hiking/mola-de-segart.jpeg',
     temperature: 21.1,
     date: new Date(2026, 10, 1)
   },
@@ -29,7 +22,7 @@ export const hiking: THiking[] = [
     district: 'Valencia',
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/pr-cv-78-circle-around-xativa-291886819',
     description: '',
-    image: cv78,
+    image: '/hiking/cv78.jpeg',
     temperature: 18.9,
     date: new Date(2026, 9, 19)
   },
@@ -41,7 +34,7 @@ export const hiking: THiking[] = [
     country: Country.Spain,
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/montesa-to-enguera-293393523',
     description: '',
-    image: montesa,
+    image: '/hiking/montesa.jpeg',
     temperature: 15.0,
     date: new Date(2026, 9, 9)
   },
@@ -53,7 +46,7 @@ export const hiking: THiking[] = [
     country: Country.Spain,
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/jerica-hiking-293392303',
     description: '',
-    image: jerica,
+    image: '/hiking/jerica.jpg',
     temperature: 27.2,
     date: new Date(2026, 8, 10)
   },
@@ -65,7 +58,7 @@ export const hiking: THiking[] = [
     district: 'Jeju',
     wikiLoc: 'https://es.wikiloc.com/rutas-carrera-por-montana/run-inwangsan-and-bugaksan-mountains-263841529',
     description: '',
-    image: hallasan,
+    image: '/hiking/hallasan.jpeg',
     temperature: 15.6,
     date: new Date(2026, 3)
   },
@@ -77,7 +70,7 @@ export const hiking: THiking[] = [
     district: 'Vang Vieng',
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/two-viewpoints-in-vang-vieng-251679232',
     description: '',
-    image: laos,
+    image: '/hiking/laos.jpeg',
     temperature: 24.4,
     date: new Date(2025, 11)
   },
@@ -88,7 +81,7 @@ export const hiking: THiking[] = [
     country: Country.Kyrgyzstan,
     district: 'Western Tien Shan Mountains',
     description: '',
-    image: sary,
+    image: '/hiking/sary.jpeg',
     temperature: 21,
     date: new Date(2023, 8)
   },

@@ -1,5 +1,4 @@
 import { Country } from '../../const.ts';
-import arhyz from './images/arhyz.jpeg';
 import { type TDay, type TTrekking } from '../../types.ts';
 
 // 42.55 + 38.2
@@ -96,7 +95,7 @@ export const arhyzTrip: TTrekking = {
   country: Country.Russia,
   district: 'Kabardino-Balkaria',
   mountainSystem: 'Caucasus, Arhyz',
-  image: arhyz,
+  image: '/trekking/arhyz.jpeg',
   days: perDays,
   link: 'arhyz',
   temperature: [5, 24],

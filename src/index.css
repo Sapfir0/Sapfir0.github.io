@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+:root {
+  color-scheme: light;
+  --color-background: #f6f7f5;
+  --color-surface: #ffffff;
+  --color-text: #1f2933;
+  --color-text-secondary: #52606d;
+  --color-border: #e4e7eb;
+  --color-primary: #2e6e53;
+  --focus-ring: 0 0 0 3px rgba(46, 110, 83, 0.25);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
 body {
   font-family:
     Inter,
@@ -7,14 +31,47 @@ body {
     BlinkMacSystemFont,
     'Segoe UI',
     sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: #245740;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: 4px;
 }
 
 .main {
-  padding-left: 120px;
-  padding-right: 120px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 32px clamp(20px, 8vw, 120px) 64px;
+}
 
-  @media (max-width: 700px) {
-    padding-left: 20px;
-    padding-right: 20px;
+@media (max-width: 700px) {
+  .main {
+    padding: 16px 16px 48px;
   }
 }

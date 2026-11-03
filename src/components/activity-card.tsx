@@ -9,29 +9,57 @@ import { Box, Card, CardContent, CardMedia, Divider, Link, Typography } from '@m
 import { useEffect, useRef, useState } from 'react';
 import { TagFilter } from '../const.ts';
 import { RunChip, TentChip } from './chips.tsx';
-import { ActivityParam } from '../components/activity-paramater.tsx';
-import type { TActivity, TFilter } from '../types.ts';
+import { ActivityParam } from './activity-paramater.tsx';
+import type { TActivity, TTagFilter } from '../types.ts';
 
-type TActivityCardProps<T extends TActivity> = {
-  activity: T;
-  setTagFilters: (tag: TFilter) => void;
-  tagFilters: Record<TagFilter, TFilter>;
+type TActivityCardProps = {
+  activity: TActivity;
+  setTagFilters: (tag: TTagFilter) => void;
+  tagFilters: Partial<Record<TagFilter, TTagFilter>>;
 };
 
 const MAXIMUM_WIDTH = 450;
+const MONTH_YEAR_FORMAT = new Intl.DateTimeFormat('en-GB', {
+  year: 'numeric',
+  month: 'short'
+});
 
-export function ActivityCard<T extends TActivity>({ activity, setTagFilters, tagFilters }: TActivityCardProps<T>) {
-  const ref = useRef<HTMLHeadingElement>(null);
+function getTemperature(activity: TActivity) {
+  return 'temperature' in activity && typeof activity.temperature === 'number' ? activity.temperature : undefined;
+}
+
+export function ActivityCard({ activity, setTagFilters, tagFilters }: TActivityCardProps) {
+  const ref = useRef<HTMLDivElement>(null);
   const [isWideCard, setIsWideCard] = useState(false);
+  const temperature = getTemperature(activity);
+  const href = activity.link ?? activity.wikiLoc;
+  const days = 'days' in activity && Array.isArray(activity.days) ? activity.days : undefined;
+
   useEffect(() => {
-    setIsWideCard(ref.current ? ref.current.offsetWidth > MAXIMUM_WIDTH : false);
-  }, [ref]);
+    const element = ref.current;
+
+    if (!element) {
+      return;
+    }
+
+    const observer = new ResizeObserver((entries) => {
+      const entry = entries[0];
+
+      if (entry) {
+        setIsWideCard(entry.contentRect.width > MAXIMUM_WIDTH);
+      }
+    });
+
+    observer.observe(element);
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <Card
       sx={{
         borderRadius: '10px',
-        boxShadow: ' -8px -4px 20px -2px rgba(0, 0, 0, 0.5);',
+        boxShadow: '0 4px 16px rgba(0, 0, 0, 0.08)',
         height: '100%'
       }}
       ref={ref}
@@ -39,55 +67,57 @@ export function ActivityCard<T extends TActivity>({ activity, setTagFilters, tag
       {activity.withTent && <TentChip onClick={setTagFilters} selected={TagFilter.WithTent in tagFilters} />}
       {activity.run && <RunChip onClick={setTagFilters} selected={TagFilter.Running in tagFilters} />}
 
-      <CardMedia component="img" height="250" image={activity.image} />
-      <CardContent sx={{ justifyContent: 'space-between' }}>
-        <Link href={activity.link ?? activity.wikiLoc}>{activity.name}</Link>
+      <CardMedia component="img" height="250" image={activity.image} alt={activity.name} loading="lazy" />
+      <CardContent>
+        {href ? (
+          <Link href={href} underline="hover" variant="h6">
+            {activity.name}
+          </Link>
+        ) : (
+          <Typography variant="h6">{activity.name}</Typography>
+        )}
 
-        <div style={{ display: 'flex', marginTop: '10px' }}>
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: '4px', mt: 1 }}>
           <PlaceIcon color="disabled" />
-          <Typography sx={{ color: 'text.secondary', mb: 1.5 }}>
+          <Typography variant="body2" sx={{ color: 'text.secondary' }}>
             {[activity.mountainSystem, activity.district, activity.country].filter(Boolean).join(', ')}
           </Typography>
-        </div>
+        </Box>
 
         <Box
           sx={{
             display: 'inline-flex',
             alignItems: 'center',
-            gap: '20px'
+            flexWrap: 'wrap',
+            gap: '20px',
+            mt: 1.5
           }}
         >
           <ActivityParam
             title="Distance"
-            value={`${Math.round(activity.distance)} km`}
+            value={Math.round(activity.distance)}
+            suffix="km"
             icon={<TerrainIcon color="disabled" />}
           />
           <Divider orientation="vertical" flexItem />
-          <ActivityParam title="Accent" value={`${activity.accent} m`} icon={<RouteIcon color="disabled" />} />
-          {activity.temperature && isWideCard && (
+          <ActivityParam title="Ascent" value={activity.accent} suffix="m" icon={<RouteIcon color="disabled" />} />
+          {temperature !== undefined && isWideCard && (
             <>
               <Divider orientation="vertical" flexItem />
               <ActivityParam
                 title="Hike temperature"
-                value={`${activity.temperature} °C (${new Intl.DateTimeFormat('en-GB', {
-                  year: 'numeric',
-                  month: 'short'
-                }).format(activity.date)})`}
-                icon={activity.temperature > 7 ? <WbSunnyIcon color="disabled" /> : <SevereColdIcon color="disabled" />}
+                value={`${temperature} °C (${MONTH_YEAR_FORMAT.format(activity.date)})`}
+                icon={temperature > 7 ? <WbSunnyIcon color="disabled" /> : <SevereColdIcon color="disabled" />}
               />
             </>
           )}
 
-          {'days' in activity && Array.isArray(activity.days) ? (
+          {days && (
             <>
               <Divider orientation="vertical" flexItem />
-              <ActivityParam
-                title="Days"
-                value={activity.days?.length + 1}
-                icon={<CalendarTodayIcon color="disabled" />}
-              />
+              <ActivityParam title="Days" value={days.length} icon={<CalendarTodayIcon color="disabled" />} />
             </>
-          ) : undefined}
+          )}
         </Box>
       </CardContent>
     </Card>

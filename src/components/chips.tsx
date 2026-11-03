@@ -1,14 +1,14 @@
 import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
 import FestivalIcon from '@mui/icons-material/Festival';
 import { Chip } from '@mui/material';
-import type { TFilter } from '../types.ts';
+import type { TTagFilter } from '../types.ts';
 import { TagFilter } from '../const.ts';
 import { TAGS } from '../services/filter-services.tsx';
 
-const chipStyles = { position: 'absolute', marginLeft: '5px', marginTop: '5px' };
+const chipStyles = { position: 'absolute', marginLeft: '5px', marginTop: '5px', zIndex: 1 };
 
 type TChipProps = {
-  onClick: (filter: TFilter) => void;
+  onClick: (filter: TTagFilter) => void;
   selected: boolean;
 };
 

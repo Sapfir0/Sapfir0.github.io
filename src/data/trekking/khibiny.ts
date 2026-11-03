@@ -1,6 +1,5 @@
 import { Country } from '../../const.ts';
 import { type TDay, type TTrekking } from '../../types.ts';
-import khibiny from './images/khibiny.jpeg';
 
 const days: TDay[] = [
   {
@@ -72,7 +71,7 @@ export const khibinyTrip: TTrekking = {
   district: 'Murmansk Oblast',
   country: Country.Russia,
   wikiLoc: 'https://www.wikiloc.com/hiking-trails/hibini-6-days-krug-po-khibinam-249967556',
-  image: khibiny,
+  image: '/trekking/khibiny.jpeg',
   days,
   date: new Date(2026, 7),
   temperature: [2, 12],

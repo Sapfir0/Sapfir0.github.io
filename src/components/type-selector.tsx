@@ -1,30 +1,31 @@
 import { ToggleButton, ToggleButtonGroup } from '@mui/material';
-import React from 'react';
+import type { MouseEvent } from 'react';
 import type { TFilter } from '../types.ts';
 
-export function TagSelector({
-  multiple,
-  tags,
-  setFilters,
-  filters
-}: {
-  tags: TFilter[];
-  setFilters: (filters: TFilter[]) => void;
-  filters: TFilter[];
-  preselected?: string;
+type TTagSelectorProps<T extends TFilter> = {
+  tags: T[];
+  filters: T[];
+  setFilters: (filters: T[]) => void;
   multiple: boolean;
-}) {
-  const [selectedTags, setTags] = React.useState<TFilter[]>(filters);
+};
 
-  const handleFormat = (_: React.MouseEvent<HTMLElement>, newTags: TFilter[]) => {
-    setTags(newTags);
-    setFilters(newTags);
+export function TagSelector<T extends TFilter>({ multiple, tags, setFilters, filters }: TTagSelectorProps<T>) {
+  const handleChange = (_: MouseEvent<HTMLElement>, newTags: T[]) => {
+    setFilters(newTags ?? []);
   };
 
   return (
-    <ToggleButtonGroup value={selectedTags} onChange={handleFormat} exclusive={!multiple} aria-label="text alignment">
+    <ToggleButtonGroup
+      value={filters}
+      onChange={handleChange}
+      exclusive={!multiple}
+      size="small"
+      aria-label="Filter activities"
+    >
       {tags.map((tag) => (
-        <ToggleButton value={tag}>{tag.label}</ToggleButton>
+        <ToggleButton key={tag.label} value={tag}>
+          {tag.label}
+        </ToggleButton>
       ))}
     </ToggleButtonGroup>
   );

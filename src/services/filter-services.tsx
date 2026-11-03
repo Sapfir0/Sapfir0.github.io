@@ -1,4 +1,5 @@
-import { AsianCountries, EuropeanCountries, Russia, type TFilter } from '../types.ts';
+import { AsianCountries, EuropeanCountries, Russia, TagFilter } from '../const.ts';
+import { type TFilter } from '../types.ts';
 
 const EUCountries = Object.values(EuropeanCountries);
 const AsiaCountries = Object.values(AsianCountries);
@@ -20,4 +21,21 @@ export const REGIONS: TFilter[] = [
     defaultSelected: true
   }
 ];
-export const TAGS = ['High_mountains'];
+
+export const TAGS: Record<TagFilter, TFilter> = {
+  [TagFilter.HighMountains]: {
+    label: TagFilter.HighMountains,
+    filter: (hike) => hike.mountainSystem === 'Caucasus',
+    defaultSelected: false
+  },
+  [TagFilter.WithTent]: {
+    label: TagFilter.WithTent,
+    filter: (hike) => Boolean(hike.withTent),
+    defaultSelected: false
+  },
+  [TagFilter.Running]: {
+    label: TagFilter.Running,
+    filter: (hike) => Boolean(hike.run),
+    defaultSelected: false
+  }
+};

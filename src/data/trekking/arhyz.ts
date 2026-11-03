@@ -1,5 +1,6 @@
+import { Country } from '../../const.ts';
 import arhyz from './images/arhyz.jpeg';
-import { Country, type TDay, type TTrekking } from '../../types.ts';
+import { type TDay, type TTrekking } from '../../types.ts';
 
 // 42.55 + 38.2
 // 2831 + 2364
@@ -98,5 +99,7 @@ export const arhyzTrip: TTrekking = {
   image: arhyz,
   days: perDays,
   link: 'arhyz',
+  temperature: [5, 24],
+  date: new Date(2026, 6),
   withTent: true
 };

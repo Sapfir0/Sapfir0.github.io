@@ -1,10 +1,11 @@
-import { Country, type TActivity } from '../../types.ts';
+import { Country } from '../../const.ts';
+import { type THiking } from '../../types.ts';
 import sestoretsk from './images/sestoretsk-to-zelenogorsk.jpg';
 import shchuche from './images/shchuche.jpg';
 import inwangsan from './images/inwangsan.jpg';
 import kandalaksha from './images/kandalaksha.jpg';
 
-export const trails: TActivity[] = [
+export const trails: THiking[] = [
   {
     name: 'Inwangsan and Bugaksan mountains',
     distance: 14.84,
@@ -15,7 +16,7 @@ export const trails: TActivity[] = [
     description: '',
     image: inwangsan,
     temperature: 26.7,
-    date: 'April 2026'
+    date: new Date(2026, 3)
   },
   {
     name: 'Around Haukijärvi lake',
@@ -27,7 +28,7 @@ export const trails: TActivity[] = [
     description: '',
     image: shchuche,
     temperature: 10.6,
-    date: 'Apr. 2026'
+    date: new Date(2026, 3) // 'Apr. 2026'
   },
   {
     name: 'From Siestarjoki to Zelenogorsk',
@@ -39,7 +40,7 @@ export const trails: TActivity[] = [
     description: '',
     image: sestoretsk,
     temperature: 6.7,
-    date: 'Mar. 2026'
+    date: new Date(2026, 2) // 'Mar. 2026'
   },
   {
     name: 'Kandalaksha Trail',
@@ -51,6 +52,6 @@ export const trails: TActivity[] = [
     description: '',
     image: kandalaksha,
     temperature: 3.9,
-    date: 'March 2026'
+    date: new Date(2026, 2) // 'March 2026'
   }
 ];

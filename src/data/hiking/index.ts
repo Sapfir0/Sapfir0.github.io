@@ -1,12 +1,26 @@
+import { Country } from '../../const.ts';
 import { russianHikes } from './russian-hikes.ts';
-import { Country, type THiking } from '../../types.ts';
+import { type THiking } from '../../types.ts';
 import cv78 from './images/cv78.jpeg';
 import hallasan from './images/hallasan.jpeg';
 import laos from './images/laos.jpeg';
 import montesa from './images/montesa.jpeg';
 import jerica from './images/jerica.jpg';
+import segart from './images/mola-de-segart.jpeg';
+import sary from './images/sary.jpeg';
 
 export const hiking: THiking[] = [
+  {
+    name: 'Mola de Segart',
+    distance: 9.88,
+    accent: 455,
+    country: Country.Spain,
+    district: 'Valencia',
+    description: '',
+    image: segart,
+    temperature: 21.1,
+    date: new Date(2026, 10, 1)
+  },
   {
     name: 'PR-CV 78 | Circle around Xàtiva',
     distance: 15.67,
@@ -17,7 +31,7 @@ export const hiking: THiking[] = [
     description: '',
     image: cv78,
     temperature: 18.9,
-    date: 'Oct. 2026'
+    date: new Date(2026, 9, 19)
   },
   {
     name: 'Montesa to Enguera',
@@ -29,7 +43,7 @@ export const hiking: THiking[] = [
     description: '',
     image: montesa,
     temperature: 15.0,
-    date: 'Oct. 2026'
+    date: new Date(2026, 9, 9)
   },
   {
     name: 'Jérica Hiking',
@@ -41,7 +55,7 @@ export const hiking: THiking[] = [
     description: '',
     image: jerica,
     temperature: 27.2,
-    date: 'Sep. 2026'
+    date: new Date(2026, 8, 10)
   },
   {
     name: 'Hallasan mountain - Seongpanak to Gwaneumsa',
@@ -53,7 +67,7 @@ export const hiking: THiking[] = [
     description: '',
     image: hallasan,
     temperature: 15.6,
-    date: 'Apr. 2026'
+    date: new Date(2026, 3)
   },
   {
     name: 'Two viewpoints in Vang Vieng | Silver Cliff, Pha Nguen',
@@ -65,7 +79,18 @@ export const hiking: THiking[] = [
     description: '',
     image: laos,
     temperature: 24.4,
-    date: 'Dec. 2025'
+    date: new Date(2025, 11)
+  },
+  {
+    name: 'Sary-Chelek | Six Lakes trail',
+    distance: 10.11,
+    accent: 672,
+    country: Country.Kyrgyzstan,
+    district: 'Western Tien Shan Mountains',
+    description: '',
+    image: sary,
+    temperature: 21,
+    date: new Date(2023, 8)
   },
   ...russianHikes
 ] as const;

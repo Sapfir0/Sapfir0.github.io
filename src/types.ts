@@ -1,21 +1,7 @@
-export enum EuropeanCountries {
-  Spain = 'Spain',
-  Germany = 'Germany'
-}
-
-export enum AsianCountries {
-  SouthKorea = 'South Korea',
-  Laos = 'Laos'
-}
-
-export enum Russia {
-  Russia = 'Russia'
-}
-
-export const Country = { ...EuropeanCountries, ...AsianCountries, ...Russia };
+import { type Country, TagFilter } from './const.ts';
 
 export type TFilter = {
-  label: string;
+  label: TagFilter;
   filter: (data: TActivity) => boolean;
   defaultSelected?: boolean;
 };
@@ -36,7 +22,6 @@ export type TActivity = {
   distance: number;
   country: (typeof Country)[keyof typeof Country];
   accent: number;
-  temperature: number;
   wikiLoc?: string;
   mountainSystem?: string;
   district: string;
@@ -46,14 +31,13 @@ export type TActivity = {
   link?: string;
   run?: boolean;
   withTent?: boolean;
-  date: string;
+  date: Date;
 };
 
-export type TTrekking = { days: TDay[] } & TActivity;
-export type THiking = {} & TActivity;
+export type TTrekking = { days: TDay[]; temperature: [number, number] } & TActivity;
+export type THiking = { temperature: number } & TActivity;
 
 export type TActivityStructure = {
   trekking: TTrekking[];
   hiking: THiking[];
-  // trails: THiking[]
 };

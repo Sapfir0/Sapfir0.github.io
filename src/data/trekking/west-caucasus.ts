@@ -1,5 +1,6 @@
+import { Country } from '../../const.ts';
 import image from './images/west-caucasus.jpeg';
-import { Country, type TDay, type TTrekking } from '../../types.ts';
+import { type TDay, type TTrekking } from '../../types.ts';
 
 // 42.55 + 38.2
 // 2831 + 2364
@@ -69,5 +70,7 @@ export const westCaucasus: TTrekking = {
   days: days,
   wikiLoc:
     'https://www.wikiloc.com/hiking-trails/through-mountains-to-sea-failed-western-caucasus-november-2024-3-days-251925660',
+  date: new Date(2024, 10),
+  temperature: [-5, 10],
   withTent: true
 };

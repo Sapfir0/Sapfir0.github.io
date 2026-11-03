@@ -1,29 +1,30 @@
-import { Box, Card, CardContent, CardMedia, Chip, Divider, Link, Typography } from '@mui/material';
-import TerrainIcon from '@mui/icons-material/Terrain';
-import RouteIcon from '@mui/icons-material/Route';
-import PlaceIcon from '@mui/icons-material/Place';
-import { useEffect, useRef, useState } from 'react';
-import { ActivityParam } from '../components/activity-paramater.tsx';
-import type { TActivity } from '../types.ts';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
-import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
-import FestivalIcon from '@mui/icons-material/Festival';
-import WbSunnyIcon from '@mui/icons-material/WbSunny';
+
+import PlaceIcon from '@mui/icons-material/Place';
+import RouteIcon from '@mui/icons-material/Route';
 import SevereColdIcon from '@mui/icons-material/SevereCold';
+import TerrainIcon from '@mui/icons-material/Terrain';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import { Box, Card, CardContent, CardMedia, Divider, Link, Typography } from '@mui/material';
+import { useEffect, useRef, useState } from 'react';
+import { TagFilter } from '../const.ts';
+import { RunChip, TentChip } from './chips.tsx';
+import { ActivityParam } from '../components/activity-paramater.tsx';
+import type { TActivity, TFilter } from '../types.ts';
 
 type TActivityCardProps<T extends TActivity> = {
   activity: T;
+  setTagFilters: (tag: TFilter) => void;
+  tagFilters: Record<TagFilter, TFilter>;
 };
 
-const chipStyles = { position: 'absolute', marginLeft: '5px', marginTop: '5px' };
+const MAXIMUM_WIDTH = 450;
 
-export function ActivityCard<T extends TActivity>({ activity }: TActivityCardProps<T>) {
+export function ActivityCard<T extends TActivity>({ activity, setTagFilters, tagFilters }: TActivityCardProps<T>) {
   const ref = useRef<HTMLHeadingElement>(null);
   const [isWideCard, setIsWideCard] = useState(false);
-  const MAXIMUM_WIDTH = 450;
   useEffect(() => {
     setIsWideCard(ref.current ? ref.current.offsetWidth > MAXIMUM_WIDTH : false);
-    console.log(ref.current ? ref.current.offsetWidth > MAXIMUM_WIDTH : 0);
   }, [ref]);
 
   return (
@@ -35,8 +36,9 @@ export function ActivityCard<T extends TActivity>({ activity }: TActivityCardPro
       }}
       ref={ref}
     >
-      {activity.withTent && <Chip sx={chipStyles} icon={<FestivalIcon />} label="With tent" color="success" />}
-      {activity.run && <Chip sx={chipStyles} icon={<DirectionsRunIcon />} label="Run" color="primary" />}
+      {activity.withTent && <TentChip onClick={setTagFilters} selected={TagFilter.WithTent in tagFilters} />}
+      {activity.run && <RunChip onClick={setTagFilters} selected={TagFilter.Running in tagFilters} />}
+
       <CardMedia component="img" height="250" image={activity.image} />
       <CardContent sx={{ justifyContent: 'space-between' }}>
         <Link href={activity.link ?? activity.wikiLoc}>{activity.name}</Link>
@@ -67,7 +69,10 @@ export function ActivityCard<T extends TActivity>({ activity }: TActivityCardPro
               <Divider orientation="vertical" flexItem />
               <ActivityParam
                 title="Hike temperature"
-                value={`${activity.temperature} °C (${activity.date})`}
+                value={`${activity.temperature} °C (${new Intl.DateTimeFormat('en-GB', {
+                  year: 'numeric',
+                  month: 'short'
+                }).format(activity.date)})`}
                 icon={activity.temperature > 7 ? <WbSunnyIcon color="disabled" /> : <SevereColdIcon color="disabled" />}
               />
             </>

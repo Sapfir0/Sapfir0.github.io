@@ -1,7 +1,8 @@
+import { Country } from '../../const.ts';
 import petaarvi from './images/petaarvi.jpg';
 import orekhovo from './images/orekhovo.jpg';
 import kapeaasalmi from './images/kapeaasalmi.jpg';
-import { Country, type THiking } from '../../types.ts';
+import { type THiking } from '../../types.ts';
 import yastrebinoe from './images/yastrebinoe.jpg';
 
 export const russianHikes: THiking[] = [
@@ -15,7 +16,7 @@ export const russianHikes: THiking[] = [
     description: '',
     image: orekhovo,
     temperature: -3.9,
-    date: 'Dec. 2024'
+    date: new Date(2024, 11) // 'Dec. 2024'
   },
   {
     name: 'Lakes near Petäjärvi',
@@ -28,7 +29,7 @@ export const russianHikes: THiking[] = [
     image: petaarvi,
     withTent: true,
     temperature: 4.4,
-    date: 'March 2025'
+    date: new Date(2025, 2) // 'March 2025'
   },
   {
     name: 'From Kapeasalmi to Kuznechnoe by Ladoga lake shore',
@@ -41,7 +42,7 @@ export const russianHikes: THiking[] = [
     image: kapeaasalmi,
     withTent: true,
     temperature: 16.8,
-    date: 'June 2025'
+    date: new Date(2025, 5) // 'June 2025'
   },
   {
     name: 'Yastrebinoe lake',
@@ -54,6 +55,6 @@ export const russianHikes: THiking[] = [
     image: yastrebinoe,
     withTent: true,
     temperature: 17.1,
-    date: 'Aug. 2025'
+    date: new Date(2025, 7) //'Aug. 2025'
   }
 ];

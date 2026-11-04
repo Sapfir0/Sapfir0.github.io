@@ -1,8 +1,22 @@
-import { Country } from '../../const.ts';
+import { Country, EasyPublicTransportation, InternetAvailability } from '../../const.ts';
 import { russianHikes } from './russian-hikes.ts';
 import { type THiking } from '../../types.ts';
 
 export const hiking: THiking[] = [
+  {
+    name: 'Xeraco - Mondúver | Ruta 3',
+    distance: 14.25,
+    accent: 940,
+    country: Country.Spain,
+    district: 'Valencia',
+    description: '',
+    image: '/hiking/xeraco.jpeg',
+    temperature: 13.9,
+    wikiLoc: 'https://www.wikiloc.com/hiking-trails/xeraco-hiking-294896602',
+    easyPublicTransportation: EasyPublicTransportation.PrivateTransfer,
+    internetAvailability: InternetAvailability.UnstableConnection,
+    date: new Date(2026, 10, 1)
+  },
   {
     name: 'Mola de Segart',
     distance: 9.88,
@@ -12,6 +26,8 @@ export const hiking: THiking[] = [
     description: '',
     image: '/hiking/mola-de-segart.jpeg',
     temperature: 21.1,
+    easyPublicTransportation: EasyPublicTransportation.PrivateTransfer,
+    internetAvailability: InternetAvailability.UnstableConnection,
     date: new Date(2026, 10, 1)
   },
   {
@@ -24,6 +40,8 @@ export const hiking: THiking[] = [
     description: '',
     image: '/hiking/cv78.jpeg',
     temperature: 18.9,
+    internetAvailability: InternetAvailability.FullCover,
+    easyPublicTransportation: EasyPublicTransportation.ByTrain,
     date: new Date(2026, 9, 19)
   },
   {
@@ -35,6 +53,8 @@ export const hiking: THiking[] = [
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/montesa-to-enguera-293393523',
     description: '',
     image: '/hiking/montesa.jpeg',
+    internetAvailability: InternetAvailability.FullCover,
+    easyPublicTransportation: EasyPublicTransportation.ByBus,
     temperature: 15.0,
     date: new Date(2026, 9, 9)
   },
@@ -47,6 +67,8 @@ export const hiking: THiking[] = [
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/jerica-hiking-293392303',
     description: '',
     image: '/hiking/jerica.jpg',
+    internetAvailability: InternetAvailability.FullCover,
+    easyPublicTransportation: EasyPublicTransportation.ByBus,
     temperature: 27.2,
     date: new Date(2026, 8, 10)
   },
@@ -59,6 +81,8 @@ export const hiking: THiking[] = [
     wikiLoc: 'https://es.wikiloc.com/rutas-carrera-por-montana/run-inwangsan-and-bugaksan-mountains-263841529',
     description: '',
     image: '/hiking/hallasan.jpeg',
+    internetAvailability: InternetAvailability.FullCover,
+    easyPublicTransportation: EasyPublicTransportation.ByBus,
     temperature: 15.6,
     date: new Date(2026, 3)
   },
@@ -71,6 +95,7 @@ export const hiking: THiking[] = [
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/two-viewpoints-in-vang-vieng-251679232',
     description: '',
     image: '/hiking/laos.jpeg',
+    internetAvailability: InternetAvailability.FullCover,
     temperature: 24.4,
     date: new Date(2025, 11)
   },
@@ -82,6 +107,7 @@ export const hiking: THiking[] = [
     district: 'Western Tien Shan Mountains',
     description: '',
     image: '/hiking/sary.jpeg',
+    internetAvailability: InternetAvailability.UnstableConnection,
     temperature: 21,
     date: new Date(2023, 8)
   },

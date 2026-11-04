@@ -1,4 +1,4 @@
-import { Country } from '../../const.ts';
+import { Country, EasyPublicTransportation, InternetAvailability } from '../../const.ts';
 import { type THiking } from '../../types.ts';
 
 export const russianHikes: THiking[] = [
@@ -11,6 +11,8 @@ export const russianHikes: THiking[] = [
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/orechovo-circle-kruzhok-cherez-polianu-pkt-252718926',
     description: '',
     image: '/hiking/orekhovo.jpg',
+    internetAvailability: InternetAvailability.NoConnection,
+    easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: -3.9,
     date: new Date(2024, 11) // 'Dec. 2024'
   },
@@ -24,6 +26,8 @@ export const russianHikes: THiking[] = [
     description: '',
     image: '/hiking/petaarvi.jpg',
     withTent: true,
+    internetAvailability: InternetAvailability.NoConnection,
+    easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 4.4,
     date: new Date(2025, 2) // 'March 2025'
   },
@@ -37,6 +41,8 @@ export const russianHikes: THiking[] = [
     description: '',
     image: '/hiking/kapeaasalmi.jpg',
     withTent: true,
+    internetAvailability: InternetAvailability.NoConnection,
+    easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 16.8,
     date: new Date(2025, 5) // 'June 2025'
   },
@@ -50,6 +56,8 @@ export const russianHikes: THiking[] = [
     description: '',
     image: '/hiking/yastrebinoe.jpg',
     withTent: true,
+    internetAvailability: InternetAvailability.NoConnection,
+    easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 17.1,
     date: new Date(2025, 7) //'Aug. 2025'
   }

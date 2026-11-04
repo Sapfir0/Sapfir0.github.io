@@ -1,4 +1,4 @@
-import { Country } from '../../const.ts';
+import { Country, EasyPublicTransportation, InternetAvailability, WildCamp } from '../../const.ts';
 import { type TDay, type TTrekking } from '../../types.ts';
 
 // 42.55 + 38.2
@@ -98,6 +98,9 @@ export const arhyzTrip: TTrekking = {
   image: '/trekking/arhyz.jpeg',
   days: perDays,
   link: 'arhyz',
+  internetAvailability: InternetAvailability.NoConnection,
+  easyPublicTransportation: EasyPublicTransportation.PrivateTransfer,
+  wildCamping: WildCamp.WildCampAllowed,
   temperature: [5, 24],
   date: new Date(2026, 6),
   withTent: true

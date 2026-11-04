@@ -1,4 +1,4 @@
-import { type Country, TagFilter } from './const.ts';
+import { type Country, EasyPublicTransportation, InternetAvailability, TagFilter, WildCamp } from './const.ts';
 
 export type TRegion = 'Europe' | 'Asia' | 'Russia';
 
@@ -36,10 +36,16 @@ export type TActivity = {
   link?: string;
   run?: boolean;
   withTent?: boolean;
+  internetAvailability: (typeof InternetAvailability)[keyof typeof InternetAvailability];
+  easyPublicTransportation?: (typeof EasyPublicTransportation)[keyof typeof EasyPublicTransportation];
   date: Date;
 };
 
-export type TTrekking = { days: TDay[]; temperature: [number, number] } & TActivity;
+export type TTrekking = {
+  days: TDay[];
+  temperature: [number, number];
+  wildCamping: (typeof WildCamp)[keyof typeof WildCamp];
+} & TActivity;
 export type THiking = { temperature: number } & TActivity;
 
 export type TActivityStructure = {

@@ -1,4 +1,4 @@
-import { Country } from '../../const.ts';
+import { Country, EasyPublicTransportation, InternetAvailability, WildCamp } from '../../const.ts';
 import { type TDay, type TTrekking } from '../../types.ts';
 
 const days: TDay[] = [
@@ -72,6 +72,9 @@ export const khibinyTrip: TTrekking = {
   country: Country.Russia,
   wikiLoc: 'https://www.wikiloc.com/hiking-trails/hibini-6-days-krug-po-khibinam-249967556',
   image: '/trekking/khibiny.jpeg',
+  internetAvailability: InternetAvailability.NoConnection,
+  easyPublicTransportation: EasyPublicTransportation.ByTrain,
+  wildCamping: WildCamp.WildCampAllowed,
   days,
   date: new Date(2026, 7),
   temperature: [2, 12],

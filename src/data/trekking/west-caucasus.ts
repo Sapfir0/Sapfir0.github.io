@@ -1,4 +1,4 @@
-import { Country } from '../../const.ts';
+import { Country, EasyPublicTransportation, InternetAvailability, WildCamp } from '../../const.ts';
 import { type TDay, type TTrekking } from '../../types.ts';
 
 // 42.55 + 38.2
@@ -70,6 +70,9 @@ export const westCaucasus: TTrekking = {
   wikiLoc:
     'https://www.wikiloc.com/hiking-trails/through-mountains-to-sea-failed-western-caucasus-november-2024-3-days-251925660',
   date: new Date(2024, 10),
+  internetAvailability: InternetAvailability.NoConnection,
+  easyPublicTransportation: EasyPublicTransportation.PrivateTransfer,
+  wildCamping: WildCamp.WildCampAllowed,
   temperature: [-5, 10],
   withTent: true
 };

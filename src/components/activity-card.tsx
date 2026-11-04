@@ -1,12 +1,10 @@
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
-
+import MovingIcon from '@mui/icons-material/Moving';
 import PlaceIcon from '@mui/icons-material/Place';
 import RouteIcon from '@mui/icons-material/Route';
-import SevereColdIcon from '@mui/icons-material/SevereCold';
-import TerrainIcon from '@mui/icons-material/Terrain';
-import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import { Box, Card, CardContent, CardMedia, Divider, Link, Typography } from '@mui/material';
-import { useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
+import { ActivityIcons } from '../components/activity-icons.tsx';
 import { TagFilter } from '../const.ts';
 import { RunChip, TentChip } from './chips.tsx';
 import { ActivityParam } from './activity-paramater.tsx';
@@ -18,42 +16,11 @@ type TActivityCardProps = {
   tagFilters: Partial<Record<TagFilter, TTagFilter>>;
 };
 
-const MAXIMUM_WIDTH = 450;
-const MONTH_YEAR_FORMAT = new Intl.DateTimeFormat('en-GB', {
-  year: 'numeric',
-  month: 'short'
-});
-
-function getTemperature(activity: TActivity) {
-  return 'temperature' in activity && typeof activity.temperature === 'number' ? activity.temperature : undefined;
-}
-
 export function ActivityCard({ activity, setTagFilters, tagFilters }: TActivityCardProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const [isWideCard, setIsWideCard] = useState(false);
-  const temperature = getTemperature(activity);
+
   const href = activity.link ?? activity.wikiLoc;
   const days = 'days' in activity && Array.isArray(activity.days) ? activity.days : undefined;
-
-  useEffect(() => {
-    const element = ref.current;
-
-    if (!element) {
-      return;
-    }
-
-    const observer = new ResizeObserver((entries) => {
-      const entry = entries[0];
-
-      if (entry) {
-        setIsWideCard(entry.contentRect.width > MAXIMUM_WIDTH);
-      }
-    });
-
-    observer.observe(element);
-
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <Card
@@ -68,7 +35,14 @@ export function ActivityCard({ activity, setTagFilters, tagFilters }: TActivityC
       {activity.run && <RunChip onClick={setTagFilters} selected={TagFilter.Running in tagFilters} />}
 
       <CardMedia component="img" height="250" image={activity.image} alt={activity.name} loading="lazy" />
-      <CardContent>
+      <CardContent
+        sx={{
+          height: '190px',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between'
+        }}
+      >
         {href ? (
           <Link href={href} underline="hover" variant="h6">
             {activity.name}
@@ -97,20 +71,10 @@ export function ActivityCard({ activity, setTagFilters, tagFilters }: TActivityC
             title="Distance"
             value={Math.round(activity.distance)}
             suffix="km"
-            icon={<TerrainIcon color="disabled" />}
+            icon={<RouteIcon color="disabled" />}
           />
           <Divider orientation="vertical" flexItem />
-          <ActivityParam title="Ascent" value={activity.accent} suffix="m" icon={<RouteIcon color="disabled" />} />
-          {temperature !== undefined && isWideCard && (
-            <>
-              <Divider orientation="vertical" flexItem />
-              <ActivityParam
-                title="Hike temperature"
-                value={`${temperature} °C (${MONTH_YEAR_FORMAT.format(activity.date)})`}
-                icon={temperature > 7 ? <WbSunnyIcon color="disabled" /> : <SevereColdIcon color="disabled" />}
-              />
-            </>
-          )}
+          <ActivityParam title="Ascent" value={activity.accent} suffix="m" icon={<MovingIcon color="disabled" />} />
 
           {days && (
             <>
@@ -118,6 +82,9 @@ export function ActivityCard({ activity, setTagFilters, tagFilters }: TActivityC
               <ActivityParam title="Days" value={days.length} icon={<CalendarTodayIcon color="disabled" />} />
             </>
           )}
+
+          <Divider orientation="vertical" flexItem />
+          <ActivityIcons activity={activity} />
         </Box>
       </CardContent>
     </Card>

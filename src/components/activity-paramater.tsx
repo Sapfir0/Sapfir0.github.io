@@ -5,10 +5,12 @@ export function ActivityParam({
   title,
   icon,
   value,
-  suffix
+  suffix,
+  description
 }: {
   title: string;
   value: string | number;
+  description?: string;
   suffix?: string;
   icon?: React.ReactElement;
 }) {
@@ -29,6 +31,11 @@ export function ActivityParam({
           {value}
           {suffix ? ` ${suffix}` : ''}
         </Typography>
+        {description && (
+          <Typography variant="body2" component="div">
+            {description}
+          </Typography>
+        )}
       </div>
     </Box>
   );

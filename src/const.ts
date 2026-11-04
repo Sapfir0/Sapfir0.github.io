@@ -20,3 +20,20 @@ export enum TagFilter {
   Running = 'Run',
   WithTent = 'With tent'
 }
+
+export enum InternetAvailability {
+  FullCover = 'Full cover',
+  UnstableConnection = 'Unstable connection',
+  NoConnection = 'No connection'
+}
+
+export enum WildCamp {
+  WildCampAllowed = 'Wild camp allowed',
+  OnlyRefuges = 'Only refuges'
+}
+
+export enum EasyPublicTransportation {
+  ByBus = 'By bus',
+  ByTrain = 'By train',
+  PrivateTransfer = 'Private transfer'
+}

@@ -13,8 +13,8 @@ export const hiking: THiking[] = [
     image: '/hiking/xeraco.jpeg',
     temperature: 13.9,
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/xeraco-hiking-294896602',
-    easyPublicTransportation: EasyPublicTransportation.PrivateTransfer,
-    internetAvailability: InternetAvailability.UnstableConnection,
+    easyPublicTransportation: EasyPublicTransportation.ByTrain,
+    internetAvailability: InternetAvailability.FullCover,
     date: new Date(2026, 10, 1)
   },
   {
@@ -108,6 +108,7 @@ export const hiking: THiking[] = [
     description: '',
     image: '/hiking/sary.jpeg',
     internetAvailability: InternetAvailability.UnstableConnection,
+    easyPublicTransportation: EasyPublicTransportation.PrivateTransfer,
     temperature: 21,
     date: new Date(2023, 8)
   },

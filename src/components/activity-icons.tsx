@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Tooltip } from '@mui/material';
 import { EasyPublicTransportation, InternetAvailability } from '../const.ts';
 import type { TActivity } from '../types.ts';
 import DepartureBoardIcon from '@mui/icons-material/DepartureBoard';
@@ -19,7 +19,7 @@ function getImageToInternetConnection(status: InternetAvailability) {
   }
 }
 
-function getImageToPublicTransportation(status: EasyPublicTransportation | undefined) {
+function getImageToPublicTransportation(status: EasyPublicTransportation) {
   switch (status) {
     case EasyPublicTransportation.ByTrain:
       return <DirectionsTransitIcon color="disabled" />;
@@ -28,14 +28,17 @@ function getImageToPublicTransportation(status: EasyPublicTransportation | undef
     case EasyPublicTransportation.PrivateTransfer:
       return <NoTransferIcon color="disabled" />;
   }
-  return null;
 }
 
 export function ActivityIcons({ activity }: { activity: TActivity }) {
   return (
     <Box sx={{}}>
-      {getImageToInternetConnection(activity.internetAvailability)}
-      {getImageToPublicTransportation(activity.easyPublicTransportation)}
+      <Tooltip title={`Internet availability: ${activity.internetAvailability}`}>
+        {getImageToInternetConnection(activity.internetAvailability)}
+      </Tooltip>
+      <Tooltip title={`Public transportation: ${activity.easyPublicTransportation}`}>
+        {getImageToPublicTransportation(activity.easyPublicTransportation)}
+      </Tooltip>
     </Box>
   );
 }

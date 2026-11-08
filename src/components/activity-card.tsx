@@ -37,7 +37,7 @@ export function ActivityCard({ activity, setTagFilters, tagFilters }: TActivityC
       <CardMedia component="img" height="250" image={activity.image} alt={activity.name} loading="lazy" />
       <CardContent
         sx={{
-          height: '190px',
+          // height: '190px',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between'

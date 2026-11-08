@@ -37,3 +37,8 @@ export enum EasyPublicTransportation {
   ByTrain = 'By train',
   PrivateTransfer = 'Private transfer'
 }
+
+export const MAIN_APP_ROUTES = {
+  Main: '/',
+  AboutMe: '/about-me'
+};

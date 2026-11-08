@@ -37,7 +37,7 @@ export type TActivity = {
   run?: boolean;
   withTent?: boolean;
   internetAvailability: (typeof InternetAvailability)[keyof typeof InternetAvailability];
-  easyPublicTransportation?: (typeof EasyPublicTransportation)[keyof typeof EasyPublicTransportation];
+  easyPublicTransportation: (typeof EasyPublicTransportation)[keyof typeof EasyPublicTransportation];
   date: Date;
 };
 

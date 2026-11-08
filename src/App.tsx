@@ -1,11 +1,12 @@
-import { Grid, Tab, Tabs } from '@mui/material';
+import { Avatar, Grid, Tab, Tabs } from '@mui/material';
 import { useMemo, useState } from 'react';
-import { TagFilter } from './const.ts';
+import { MAIN_APP_ROUTES, TagFilter } from './const.ts';
 import { REGIONS } from './services/filter-services.tsx';
 import { TagSelector } from './components/type-selector.tsx';
 import { ActivityCard } from './components/activity-card.tsx';
 import type { TActivityStructure, TRegionFilter, TTagFilter } from './types.ts';
 import { trekkingData } from './data';
+import { NavLink } from 'react-router';
 
 import './App.css';
 
@@ -43,6 +44,9 @@ function App() {
     <div className="app">
       <div className="app__filters">
         <TagSelector tags={REGIONS} filters={filtersRegionsList} setFilters={setFiltersRegionsList} multiple />
+        <NavLink to={MAIN_APP_ROUTES.AboutMe}>
+          <Avatar src="/avatar.jpg" />
+        </NavLink>
       </div>
 
       <Tabs

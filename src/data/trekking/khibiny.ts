@@ -64,19 +64,20 @@ const days: TDay[] = [
 // 333,
 export const khibinyTrip: TTrekking = {
   name: 'Russian arctic adventure',
-  distance: days.reduce((fullDistance, day) => fullDistance + day.distance, 0),
-  accent: days.reduce((fullAccent, day) => fullAccent + day.accent, 0),
+  distance: 108,
+  accent: 2061,
   description: 'Поход',
   mountainSystem: 'Khibiny',
   district: 'Murmansk Oblast',
   country: Country.Russia,
   wikiLoc: 'https://www.wikiloc.com/hiking-trails/hibini-6-days-krug-po-khibinam-249967556',
-  image: '/trekking/khibiny.jpeg',
+  image: '/trekking/khibiny/khibiny.jpeg',
   internetAvailability: InternetAvailability.NoConnection,
   easyPublicTransportation: EasyPublicTransportation.ByTrain,
   wildCamping: WildCamp.WildCampAllowed,
   days,
   date: new Date(2026, 7),
   temperature: [2, 12],
-  withTent: true
+  withTent: true,
+  trackLink: ''
 };

@@ -12,6 +12,7 @@ export const trails: THiking[] = [
     description: '',
     image: '/trails/inwangsan.jpg',
     internetAvailability: InternetAvailability.FullCover,
+    easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 26.7,
     date: new Date(2026, 3)
   },

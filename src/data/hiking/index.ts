@@ -109,6 +109,7 @@ export const hiking: THiking[] = [
     description: '',
     image: '/hiking/laos.jpeg',
     internetAvailability: InternetAvailability.FullCover,
+    easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 24.4,
     date: new Date(2025, 11)
   },

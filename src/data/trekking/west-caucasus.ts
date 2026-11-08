@@ -58,14 +58,15 @@ const days: TDay[] = [
 ];
 
 export const westCaucasus: TTrekking = {
+  trackLink: '/west-caucasus/west-caucasus-full.gpx',
   name: 'West Caucasus',
-  distance: days.reduce((fullDistance, day) => fullDistance + day.distance, 0),
-  accent: days.reduce((fullAccent, day) => fullAccent + day.accent, 0),
+  distance: 65,
+  accent: 2200,
   description: 'Поход',
   country: Country.Russia,
   district: 'Krasnodar Krai',
   mountainSystem: 'Caucasus',
-  image: '/trekking/west-caucasus.jpeg',
+  image: '/trekking/west-caucasus/west-caucasus.jpeg',
   days: days,
   wikiLoc:
     'https://www.wikiloc.com/hiking-trails/through-mountains-to-sea-failed-western-caucasus-november-2024-3-days-251925660',

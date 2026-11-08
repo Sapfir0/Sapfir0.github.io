@@ -1,11 +1,16 @@
 import HikingIcon from '@mui/icons-material/Hiking';
-import { Card, CardContent } from '@mui/material';
-import type { TDay } from '../types.ts';
+import { Box, Card, CardContent, Typography } from '@mui/material';
+import { useState } from 'react';
+import { Map } from '../components/map.tsx';
+import type { TDay, TGpxData } from '../types.ts';
 import { ActivityParam } from './activity-paramater.tsx';
 import MovingIcon from '@mui/icons-material/Moving';
 import TrendingDownIcon from '@mui/icons-material/TrendingDown';
+import { GpxTrack } from '../components/gpx-track.tsx';
 
 export function ActivityDay({ day }: { day: TDay }) {
+  const [gpxData, setGpxData] = useState<TGpxData | null>(null);
+
   return (
     <Card
       sx={{
@@ -15,11 +20,23 @@ export function ActivityDay({ day }: { day: TDay }) {
       }}
     >
       <CardContent sx={{ justifyContent: 'space-between' }}>
-        <ActivityParam title="Distance" value={day.distance} suffix="km" icon={<HikingIcon />} />
-        <ActivityParam title="Ascent" value={day.accent} suffix="m" icon={<MovingIcon />} />
-        <ActivityParam title="Descent" value={day.descent} suffix="m" icon={<TrendingDownIcon />} />
-        <ActivityParam title="Max elevation" value={day.maxElevation} suffix="m" />
-        <ActivityParam title="Min elevation" value={day.minElevation} suffix="m" />
+        {gpxData && (
+          <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+            <ActivityParam title="Distance" value={gpxData.distance} suffix="km" icon={<HikingIcon />} />
+            <ActivityParam title="Ascent" value={gpxData.accent} suffix="m" icon={<MovingIcon />} />
+            <ActivityParam title="Descent" value={gpxData.descent} suffix="m" icon={<TrendingDownIcon />} />
+            <ActivityParam title="Max elevation" value={gpxData.elevationMax} suffix="m" />
+            <ActivityParam title="Min elevation" value={gpxData.elevationMin} suffix="m" />
+          </Box>
+        )}
+
+        {day.trackLink && (
+          <Map>
+            <GpxTrack url={day.trackLink} onLoadGpx={setGpxData} />
+          </Map>
+        )}
+
+        <Typography sx={{ mt: 3, mb: 3 }}>{day.description}</Typography>
       </CardContent>
     </Card>
   );

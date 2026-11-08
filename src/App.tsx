@@ -1,5 +1,7 @@
-import { Avatar, Grid, Tab, Tabs } from '@mui/material';
+import { Avatar, Box, Button, Grid, Tab, Tabs } from '@mui/material';
 import { useMemo, useState } from 'react';
+import { GpxTrack } from './components/gpx-track.tsx';
+import { Map } from './components/map.tsx';
 import { MAIN_APP_ROUTES, TagFilter } from './const.ts';
 import { REGIONS } from './services/filter-services.tsx';
 import { TagSelector } from './components/type-selector.tsx';
@@ -14,6 +16,7 @@ function App() {
   const [currentTab, setCurrentTab] = useState<keyof TActivityStructure>('hiking');
   const [filtersRegionsList, setFiltersRegionsList] = useState<TRegionFilter[]>(REGIONS);
   const [tagFiltersList, setTagFiltersList] = useState<Partial<Record<TagFilter, TTagFilter>>>({});
+  const [shouldShowMap, setShouldShowMap] = useState<boolean>(false);
 
   const data = useMemo(
     () =>
@@ -44,9 +47,11 @@ function App() {
     <div className="app">
       <div className="app__filters">
         <TagSelector tags={REGIONS} filters={filtersRegionsList} setFilters={setFiltersRegionsList} multiple />
-        <NavLink to={MAIN_APP_ROUTES.AboutMe}>
-          <Avatar src="/avatar.jpg" />
-        </NavLink>
+        <Box sx={{ display: 'flex', gap: 3 }}>
+          <NavLink to={MAIN_APP_ROUTES.AboutMe}>
+            <Avatar src="/avatar.jpg" />
+          </NavLink>
+        </Box>
       </div>
 
       <Tabs
@@ -61,6 +66,11 @@ function App() {
           <Tab key={key} value={key} label={key} />
         ))}
       </Tabs>
+      <Button onClick={() => setShouldShowMap(!shouldShowMap)}>{shouldShowMap ? 'Hide map' : 'Show map'}</Button>
+
+      {shouldShowMap && (
+        <Map>{data.map((activity) => (activity.trackLink ? <GpxTrack url={activity.trackLink} /> : undefined))}</Map>
+      )}
 
       <Grid container spacing={3} columns={{ xs: 4, sm: 8, md: 12 }}>
         {data.map((activity) => (

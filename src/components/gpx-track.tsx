@@ -7,7 +7,7 @@ import type { TGpxData } from '../types.ts';
 
 type GpxTrackProps = {
   url: string;
-  onLoadGpx: (gpxData: TGpxData) => void;
+  onLoadGpx?: (gpxData: TGpxData) => void;
 };
 
 // The global Leaflet object published by the UMD build that leaflet-gpx reads.
@@ -73,7 +73,7 @@ export function GpxTrack({ url, onLoadGpx }: GpxTrackProps) {
 
       gpxLayer.on('loaded', (event) => {
         if (gpxLayer) {
-          onLoadGpx({
+          onLoadGpx?.({
             distance: Math.round(gpxLayer.get_distance() / 1000),
             elevationData: gpxLayer.get_elevation_data(),
             elevationMin: Math.round(gpxLayer.get_elevation_min()),

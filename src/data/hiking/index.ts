@@ -10,11 +10,13 @@ export const hiking: THiking[] = [
     country: Country.Spain,
     district: 'Valencia',
     description: '',
-    image: '/hiking/estivella.jpeg',
+    image: '/hiking/valencia/estivella/estivella.jpeg',
     temperature: 16.1,
     easyPublicTransportation: EasyPublicTransportation.ByBus,
     internetAvailability: InternetAvailability.FullCover,
-    date: new Date(2026, 10, 1)
+    date: new Date(2026, 10, 1),
+    withTent: false,
+    rating: 3
   },
   {
     name: 'Xeraco - Mondúver | Ruta 3',
@@ -23,12 +25,14 @@ export const hiking: THiking[] = [
     country: Country.Spain,
     district: 'Valencia',
     description: '',
-    image: '/hiking/xeraco.jpeg',
+    image: '/hiking/valencia/xeraco/xeraco.jpeg',
     temperature: 13.9,
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/xeraco-hiking-294896602',
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     internetAvailability: InternetAvailability.FullCover,
-    date: new Date(2026, 10, 1)
+    trackLink: '/hiking/valencia/xeraco/xeraco-monduver-ruta-3.gpx',
+    date: new Date(2026, 10, 1),
+    rating: 7
   },
   {
     name: 'Mola de Segart',
@@ -37,11 +41,12 @@ export const hiking: THiking[] = [
     country: Country.Spain,
     district: 'Valencia',
     description: '',
-    image: '/hiking/mola-de-segart.jpeg',
+    image: '/hiking/valencia/segart/mola-de-segart.jpeg',
     temperature: 21.1,
     easyPublicTransportation: EasyPublicTransportation.PrivateTransfer,
     internetAvailability: InternetAvailability.UnstableConnection,
-    date: new Date(2026, 10, 1)
+    date: new Date(2026, 10, 1),
+    rating: 6
   },
   {
     name: 'PR-CV 78 | Circle around Xàtiva',
@@ -51,8 +56,9 @@ export const hiking: THiking[] = [
     district: 'Valencia',
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/pr-cv-78-circle-around-xativa-291886819',
     description: '',
-    image: '/hiking/cv78.jpeg',
+    image: '/hiking/valencia/xativa/cv78.jpeg',
     temperature: 18.9,
+    trackLink: '/hiking/valencia/xativa/pr-cv-78-circle-around-xativa.gpx',
     internetAvailability: InternetAvailability.FullCover,
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     date: new Date(2026, 9, 19)
@@ -65,9 +71,10 @@ export const hiking: THiking[] = [
     country: Country.Spain,
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/montesa-to-enguera-293393523',
     description: '',
-    image: '/hiking/montesa.jpeg',
+    image: '/hiking/valencia/montesa/montesa.jpeg',
     internetAvailability: InternetAvailability.FullCover,
     easyPublicTransportation: EasyPublicTransportation.ByBus,
+    trackLink: '/hiking/valencia/montesa/montesa-to-enguera.gpx',
     temperature: 15.0,
     date: new Date(2026, 9, 9)
   },
@@ -79,9 +86,10 @@ export const hiking: THiking[] = [
     country: Country.Spain,
     wikiLoc: 'https://www.wikiloc.com/hiking-trails/jerica-hiking-293392303',
     description: '',
-    image: '/hiking/jerica.jpg',
+    image: '/hiking/valencia/jerica/jerica.jpg',
     internetAvailability: InternetAvailability.FullCover,
     easyPublicTransportation: EasyPublicTransportation.ByBus,
+    trackLink: '/hiking/valencia/jerica/jerica.gpx',
     temperature: 27.2,
     date: new Date(2026, 8, 10)
   },
@@ -93,7 +101,7 @@ export const hiking: THiking[] = [
     district: 'Jeju',
     wikiLoc: 'https://es.wikiloc.com/rutas-carrera-por-montana/run-inwangsan-and-bugaksan-mountains-263841529',
     description: '',
-    image: '/hiking/hallasan.jpeg',
+    image: '/hiking/south-korea/hallasan.jpeg',
     internetAvailability: InternetAvailability.FullCover,
     easyPublicTransportation: EasyPublicTransportation.ByBus,
     temperature: 15.6,

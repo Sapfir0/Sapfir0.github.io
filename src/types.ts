@@ -40,6 +40,8 @@ export type TActivity = {
   internetAvailability: (typeof InternetAvailability)[keyof typeof InternetAvailability];
   easyPublicTransportation: (typeof EasyPublicTransportation)[keyof typeof EasyPublicTransportation];
   date: Date;
+  rating?: number;
+  trackLink?: string;
 };
 
 export type TTrekking = {

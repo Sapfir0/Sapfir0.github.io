@@ -8,7 +8,8 @@ const days: TDay[] = [
     descent: 243,
     minElevation: 227,
     maxElevation: 535,
-    link: 'https://connect.garmin.com/app/activity/20232327089'
+    link: 'https://connect.garmin.com/app/activity/20232327089',
+    trackLink: '/trekking/khibiny/day-1.gpx'
   },
   {
     distance: 20.32,
@@ -16,7 +17,8 @@ const days: TDay[] = [
     descent: 280,
     minElevation: 151,
     maxElevation: 363,
-    link: 'https://connect.garmin.com/app/activity/20232327324'
+    link: 'https://connect.garmin.com/app/activity/20232327324',
+    trackLink: '/trekking/khibiny/day-2.gpx'
   },
   {
     distance: 19.07,
@@ -24,7 +26,8 @@ const days: TDay[] = [
     descent: 330,
     minElevation: 145,
     maxElevation: 263,
-    link: 'https://connect.garmin.com/app/activity/20232327324'
+    link: 'https://connect.garmin.com/app/activity/20232327324',
+    trackLink: '/trekking/khibiny/day-3.gpx'
   },
   {
     distance: 16.07,
@@ -32,7 +35,8 @@ const days: TDay[] = [
     descent: 291,
     minElevation: 217,
     maxElevation: 401,
-    link: 'https://connect.garmin.com/app/activity/20215810584'
+    link: 'https://connect.garmin.com/app/activity/20215810584',
+    trackLink: '/trekking/khibiny/day-4.gpx'
   },
   {
     distance: 18.76,
@@ -40,7 +44,8 @@ const days: TDay[] = [
     descent: 565,
     minElevation: 208,
     maxElevation: 723,
-    link: 'https://connect.garmin.com/app/activity/20217361844'
+    link: 'https://connect.garmin.com/app/activity/20217361844',
+    trackLink: '/trekking/khibiny/day-5.gpx'
   },
   {
     distance: 18.0,
@@ -48,7 +53,8 @@ const days: TDay[] = [
     descent: 191,
     minElevation: 266,
     maxElevation: 488,
-    link: 'https://connect.garmin.com/app/activity/20217428740'
+    link: 'https://connect.garmin.com/app/activity/20217428740',
+    trackLink: '/trekking/khibiny/day-6.gpx'
   },
   {
     distance: 3.11,
@@ -56,7 +62,8 @@ const days: TDay[] = [
     descent: 75,
     minElevation: 331,
     maxElevation: 386,
-    link: 'https://connect.garmin.com/app/activity/20221274760'
+    link: 'https://connect.garmin.com/app/activity/20221274760',
+    trackLink: '/trekking/khibiny/day-7.gpx'
   }
 ];
 
@@ -71,6 +78,7 @@ export const khibinyTrip: TTrekking = {
   district: 'Murmansk Oblast',
   country: Country.Russia,
   wikiLoc: 'https://www.wikiloc.com/hiking-trails/hibini-6-days-krug-po-khibinam-249967556',
+  link: '/khibiny',
   image: '/trekking/khibiny/khibiny.jpeg',
   internetAvailability: InternetAvailability.NoConnection,
   easyPublicTransportation: EasyPublicTransportation.ByTrain,
@@ -79,5 +87,5 @@ export const khibinyTrip: TTrekking = {
   date: new Date(2026, 7),
   temperature: [2, 12],
   withTent: true,
-  trackLink: ''
+  trackLink: '/trekking/khibiny/khibiny-full.gpx'
 };

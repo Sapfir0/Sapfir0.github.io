@@ -4,6 +4,21 @@ import { type THiking } from '../../types.ts';
 
 export const hiking: THiking[] = [
   {
+    name: 'Xeresa - Mondúver - Xeraco',
+    distance: 17.75,
+    accent: 1009,
+    country: Country.Spain,
+    district: 'Valencia',
+    description: '',
+    image: '/hiking/valencia/xeraco/xeresa-xeraco.jpeg',
+    temperature: 17.8,
+    easyPublicTransportation: EasyPublicTransportation.ByTrain,
+    internetAvailability: InternetAvailability.FullCover,
+    date: new Date(2026, 10, 1),
+    withTent: false,
+    rating: 7
+  },
+  {
     name: 'PR-CV 369 Estivella - Penya Roja',
     distance: 22.05,
     accent: 888,

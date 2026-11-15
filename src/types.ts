@@ -55,6 +55,7 @@ export type THiking = { temperature: number } & TActivity;
 export type TActivityStructure = {
   trekking: TTrekking[];
   hiking: THiking[];
+  water: THiking[];
 };
 
 export type TGpxData = {

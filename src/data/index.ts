@@ -1,3 +1,4 @@
+import { water } from './water';
 import { hiking } from './hiking';
 import { trails } from './trails';
 import { khibinyTrip } from './trekking/khibiny.ts';
@@ -8,5 +9,6 @@ import type { TActivityStructure } from '../types.ts';
 
 export const trekkingData: TActivityStructure = {
   hiking: [...hiking, ...trails.map((trail) => ({ ...trail, run: true }))],
-  trekking: [arhyzTrip, khibinyTrip, westCaucasus]
+  trekking: [arhyzTrip, khibinyTrip, westCaucasus],
+  water
 } as const;

@@ -13,198 +13,24 @@
     </link>
     <time>2026-11-04T14:26:58.412Z</time>
   </metadata>
-  <wpt lat="39.029862" lon="-0.227218">
-    <ele>31.1</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Pre start</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.027705" lon="-0.234118">
-    <ele>48.3</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Mandarinas gardens</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.021604" lon="-0.250432">
-    <ele>103.7</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Toilets and Picnic places</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.020927" lon="-0.253520">
-    <ele>114.2</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Real start of trail</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.021771" lon="-0.257865">
-    <ele>161.0</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Fallen part of the road</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.022597" lon="-0.261258">
-    <ele>185.8</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Road</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.021957" lon="-0.262884">
-    <ele>215.2</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Prolonged accent</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.020426" lon="-0.262150">
-    <ele>295.8</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Road</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.017063" lon="-0.260153">
-    <ele>441.2</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Car road</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.016125" lon="-0.265782">
-    <ele>458.5</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Go forward!</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.015549" lon="-0.270027">
-    <ele>559.5</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Pla de Toni Bou</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.013105" lon="-0.272193">
-    <ele>609.6</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Views</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.012228" lon="-0.271384">
-    <ele>620.0</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>PR CV-153</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.011157" lon="-0.272498">
-    <ele>680.4</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Another car road</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.010465" lon="-0.270354">
-    <ele>715.6</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Crossway</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.009388" lon="-0.266872">
-    <ele>830.6</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Monduber</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.008688" lon="-0.266134">
-    <ele>816.3</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Road between station</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.007394" lon="-0.263075">
-    <ele>782.2</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Steep road</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.007829" lon="-0.261989">
-    <ele>699.9</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Views</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.009059" lon="-0.261611">
-    <ele>621.0</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Last cloud points</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.009225" lon="-0.260583">
-    <ele>595.9</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>We can see views again!</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.010413" lon="-0.256543">
-    <ele>463.3</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Road</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.011694" lon="-0.252323">
-    <ele>401.5</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>El Picaio</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.011739" lon="-0.253236">
-    <ele>416.5</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Here you should decide which track you'll go</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.016306" lon="-0.244216">
-    <ele>294.9</ele>
-    <time>2026-11-04T21:06:28.465Z</time>
-    <name>Look right</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
+
   <trk>
     <name>Xeraco - Mondúver | Ruta 3 - Wikiloc</name>
-    <cmt>Кольцевой маршрут из Xeraco через: 
-- Font de l'Ull (2.1 km) 
-- Font de l'Ull (3.1 km) 
-- Collado de Les Bigues (6.8 km) 
-- Monduver (7.9 km) 
-- Paso de montaña (8.4 km) 
-- Picaio (9.8 km) 
+    <cmt>Кольцевой маршрут из Xeraco через:
+- Font de l'Ull (2.1 km)
+- Font de l'Ull (3.1 km)
+- Collado de Les Bigues (6.8 km)
+- Monduver (7.9 km)
+- Paso de montaña (8.4 km)
+- Picaio (9.8 km)
 - Mirador del Pla de la Vella (11.2 km)</cmt>
-    <desc>Кольцевой маршрут из Xeraco через: 
-- Font de l'Ull (2.1 km) 
-- Font de l'Ull (3.1 km) 
-- Collado de Les Bigues (6.8 km) 
-- Monduver (7.9 km) 
-- Paso de montaña (8.4 km) 
-- Picaio (9.8 km) 
+    <desc>Кольцевой маршрут из Xeraco через:
+- Font de l'Ull (2.1 km)
+- Font de l'Ull (3.1 km)
+- Collado de Les Bigues (6.8 km)
+- Monduver (7.9 km)
+- Paso de montaña (8.4 km)
+- Picaio (9.8 km)
 - Mirador del Pla de la Vella (11.2 km)</desc>
     <trkseg>
       <trkpt lat="39.028249" lon="-0.231860">

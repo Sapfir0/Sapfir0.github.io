@@ -42,3 +42,8 @@ export const MAIN_APP_ROUTES = {
   Main: '/',
   AboutMe: '/about-me'
 };
+
+export const TYPE_OF_ACTIVITY_DESCRIPTION = {
+  hiking: '1-2 day hikes',
+  trekking: 'Multiday hike'
+};

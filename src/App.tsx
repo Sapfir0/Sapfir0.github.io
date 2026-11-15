@@ -47,6 +47,9 @@ function App() {
     <div className="app">
       <div className="app__filters">
         <TagSelector tags={REGIONS} filters={filtersRegionsList} setFilters={setFiltersRegionsList} multiple />
+        {/*<Typography>{`${TYPE_OF_ACTIVITY_DESCRIPTION[currentTab]} in ${filtersRegionsList*/}
+        {/*  .map((region) => region.label)*/}
+        {/*  .join(', ')}`}</Typography>*/}
         <Box sx={{ display: 'flex', gap: 3 }}>
           <NavLink to={MAIN_APP_ROUTES.AboutMe}>
             <Avatar src="/avatar.jpg" />

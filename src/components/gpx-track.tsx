@@ -17,14 +17,6 @@ type LeafletGlobal = {
   GPX: typeof L.GPX;
 };
 
-// leaflet-gpx is a browser-global plugin: it has no `import` of leaflet and
-// reads the bare global `L` at module load (e.g. `new L.Icon.Default`,
-// `L.FeatureGroup.extend`, `L.Polyline`, ...). It relies on the UMD Leaflet
-// build's mixin API (`Class.extend` / `include`), which the ESM build that
-// `import * as L from 'leaflet'` resolves to does NOT provide. So we inject the
-// UMD build (`leaflet/dist/leaflet.js`) as a classic script — the one that sets
-// `window.L` and defines `Icon.Default` / `FeatureGroup.extend` — before
-// importing the plugin.
 function loadLeafletGlobal(): Promise<void> {
   return new Promise((resolve, reject) => {
     const existing = (window as { L?: LeafletGlobal }).L;
@@ -58,11 +50,11 @@ export function GpxTrack({ url, onLoadGpx }: GpxTrackProps) {
 
       gpxLayer = new globalL.GPX(url, {
         async: true,
-        marker_options: {
-          startIconUrl:
+        // @ts-expect-error TODO Не правильный тип в leaflet-types
+        markers: {
+          startIcon:
             'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
-          endIconUrl:
-            'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png'
+          endIcon: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png'
         },
         polyline_options: {
           color: '#ff2d95',

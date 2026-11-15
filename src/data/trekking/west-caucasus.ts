@@ -60,9 +60,10 @@ const days: TDay[] = [
 export const westCaucasus: TTrekking = {
   trackLink: '/west-caucasus/west-caucasus-full.gpx',
   name: 'West Caucasus',
-  distance: 65,
-  accent: 2200,
-  description: 'Поход',
+  distance: 35.63,
+  accent: 1507,
+  description:
+    "The original plan was to go through Shessi, the Semashko Pass, descend radially from Bolshoy Pseushko and reach the sea in Nizhny Makops. Due to the weather conditions, we couldn't get out, there was too much snow at 1500m, and we didn't have snowshoes, so the group's route was too slow. When we reached the cabin, we decided to turn around and walk back along the trodden path.\n",
   country: Country.Russia,
   district: 'Krasnodar Krai',
   mountainSystem: 'Caucasus',

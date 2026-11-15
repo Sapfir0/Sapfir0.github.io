@@ -13,81 +13,26 @@
     </link>
     <time>2026-10-10T15:13:39Z</time>
   </metadata>
-  <wpt lat="38.950200" lon="-0.653350">
-    <ele>302.0</ele>
-    <time>2026-10-27T09:34:00.558Z</time>
-    <name>Montesa</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.951269" lon="-0.652094">
-    <ele>335.6</ele>
-    <time>2026-10-27T09:34:00.558Z</time>
-    <name>Tables to chill</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.951778" lon="-0.653082">
-    <ele>345.5</ele>
-    <time>2026-10-27T09:34:00.558Z</time>
-    <name>Castle of Montesa</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.952297" lon="-0.654650">
-    <ele>342.4</ele>
-    <time>2026-10-27T09:34:00.558Z</time>
-    <name>Car road</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.970948" lon="-0.667589">
-    <ele>575.4</ele>
-    <time>2026-10-27T09:34:00.558Z</time>
-    <name>View downhill</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.976620" lon="-0.679026">
-    <ele>477.8</ele>
-    <time>2026-10-27T09:34:00.558Z</time>
-    <name>Castle of Enguera</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.979875" lon="-0.667494">
-    <ele>414.4</ele>
-    <time>2026-10-27T09:34:00.558Z</time>
-    <name>Steepy road</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.978942" lon="-0.686150">
-    <ele>305.6</ele>
-    <time>2026-10-27T09:34:00.558Z</time>
-    <name>Enguera</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
+
   <trk>
     <name>Montesa to Enguera - Wikiloc</name>
-    <cmt>During the track maintenance works, Montesa can be reached from Xàtiva. 
- 
-At the beginning of the route, you can visit the local castle, although it was closed during our trip. 
- 
-Until the turn towards Enguera, the route follows a major road. After that, the trail begins, with a couple of steep sections. 
- 
-In Enguera, it's worth buying some food before heading back. Climb up to the Castle of Enguera, where you can enjoy your meal sitting on a rock while taking in the views. Then, follow the same route back to Montesa. 
- 
+    <cmt>During the track maintenance works, Montesa can be reached from Xàtiva.
+
+At the beginning of the route, you can visit the local castle, although it was closed during our trip.
+
+Until the turn towards Enguera, the route follows a major road. After that, the trail begins, with a couple of steep sections.
+
+In Enguera, it's worth buying some food before heading back. Climb up to the Castle of Enguera, where you can enjoy your meal sitting on a rock while taking in the views. Then, follow the same route back to Montesa.
+
 If you arrive early, there are plenty of convenient picnic tables near the castle.</cmt>
-    <desc>During the track maintenance works, Montesa can be reached from Xàtiva. 
- 
-At the beginning of the route, you can visit the local castle, although it was closed during our trip. 
- 
-Until the turn towards Enguera, the route follows a major road. After that, the trail begins, with a couple of steep sections. 
- 
-In Enguera, it's worth buying some food before heading back. Climb up to the Castle of Enguera, where you can enjoy your meal sitting on a rock while taking in the views. Then, follow the same route back to Montesa. 
- 
+    <desc>During the track maintenance works, Montesa can be reached from Xàtiva.
+
+At the beginning of the route, you can visit the local castle, although it was closed during our trip.
+
+Until the turn towards Enguera, the route follows a major road. After that, the trail begins, with a couple of steep sections.
+
+In Enguera, it's worth buying some food before heading back. Climb up to the Castle of Enguera, where you can enjoy your meal sitting on a rock while taking in the views. Then, follow the same route back to Montesa.
+
 If you arrive early, there are plenty of convenient picnic tables near the castle.</desc>
     <trkseg>
       <trkpt lat="38.949937" lon="-0.651795">

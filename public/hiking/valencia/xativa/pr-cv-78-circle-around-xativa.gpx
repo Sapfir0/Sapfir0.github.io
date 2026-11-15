@@ -13,255 +13,88 @@
     </link>
     <time>2026-10-17T13:47:07Z</time>
   </metadata>
-  <wpt lat="38.986808" lon="-0.517775">
-    <ele>146.4</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Xátiva</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.985693" lon="-0.520905">
-    <ele>154.9</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Info</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.984064" lon="-0.519181">
-    <ele>214.2</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Start of the path</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.984331" lon="-0.520266">
-    <ele>196.2</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Navigation</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.983568" lon="-0.522839">
-    <ele>243.8</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Cova dels coloms</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.982786" lon="-0.525700">
-    <ele>199.9</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Chose right path (if you go straight - there will be a homemade shelter)</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.982201" lon="-0.527695">
-    <ele>180.7</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Ruins</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.979464" lon="-0.529416">
-    <ele>255.3</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Portet de Vernissa</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.973728" lon="-0.535438">
-    <ele>249.2</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Crossroads</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.972002" lon="-0.536057">
-    <ele>266.2</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Way</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.970168" lon="-0.534912">
-    <ele>254.8</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Car road</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.966491" lon="-0.532363">
-    <ele>243.3</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Mandarinas</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.960557" lon="-0.526618">
-    <ele>181.5</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Bees</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.960152" lon="-0.525628">
-    <ele>178.5</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Water point</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.959189" lon="-0.523592">
-    <ele>183.5</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Viewpoints</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.964620" lon="-0.505704">
-    <ele>137.2</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Dogs on left</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.964402" lon="-0.498069">
-    <ele>223.4</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Official way splits (you can go straight)</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.962344" lon="-0.497068">
-    <ele>247.9</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Viewpoints</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.964156" lon="-0.492889">
-    <ele>112.2</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Cova Negra</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.965217" lon="-0.496531">
-    <ele>120.2</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Cova Negra</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.966697" lon="-0.495930">
-    <ele>111.1</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Children route</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.976613" lon="-0.490680">
-    <ele>112.9</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Path</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.981385" lon="-0.484875">
-    <ele>117.9</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Viewpoints</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="38.989024" lon="-0.491691">
-    <ele>115.2</ele>
-    <time>2026-10-18T09:11:03.613Z</time>
-    <name>Boring road</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
+
   <trk>
     <name>PR-CV 78 | Circle around Xàtiva - Wikiloc</name>
-    <cmt>Points: 
-- Cova dels Coloms (0.6 km) 
-- Cueva de Qanat (1.3 km) 
-- Portet de Vernissa (1.6 km) 
-- Font de la Quintana (5.0 km) 
-- Cueva del águila (8.6 km) 
-- Molí Guarner (8.9 km) 
-- Cova Negra (9.4 km) 
-- Font de la Cova Negra (9.7 km) 
-- Arcadetes (11.0 km) 
-- Mirador Río Albaida (12.0 km) 
-- Pont De La Sequia (14.1 km) 
- 
- 
-Перед маршрутом я поднялся к замку и осмотрел его. Потом при спуске по автомобильной дороге будет несколько возможностей схода на тропу, двигаемся по указателям. 
-После поворота в лес важно выбрать правильную тропу и держаться ниже по склону, если держаться на тропе выше, то там будет чей-то импровизировнный шелтер. 
-Вскоре вы будете проходить Portet de Vernissa, на него можно зайти и сделать небольшой отдых. Дорога отлично помечена, двигаемся по желто-белым меткам. 
-Примерно через 3 км от старта, вы выйдете на автомобильную дорогу, на ней тоже важно идти постоянно прямо, повернув на третем повороте (там будет большая табличка, запрещаяющая въезд, но мы же пешком, нам можно) 
-Будет большое здание с улями, его обходим по правой стороне и идем через небольшую просеку, там же можно восполнить запас воды. 
-Дальше дорога будет прямо до 8 километра маршрута, на этом этапе вы можете свернуть направо и пройти немного еще по узким тропам, или пойти прямо и выйдти сразу к пещере Cova Negra. 
-После заверешния этой петли, вы выйдете на широкую дорогу с стендами с разной информацией, а потом и большим красивым акведуком. Дальше не будет ничего интересного, просто доходим до города. 
- 
- 
-Before starting the route, I went up to the castle and explored it. 
- 
-On the way down along the road, there will be several opportunities to get onto the trail. Just follow the signs. 
- 
-After turning into the forest, it’s important to choose the right trail and keep to the lower part of the slope. If you take the higher trail, you’ll come across someone’s makeshift shelter. 
- 
-Soon, you’ll pass Portet de Vernissa, where you can make a short detour and take a break. The trail is very well marked, so just follow the yellow and white markers. 
- 
-About 3 km from the starting point, you’ll reach a road. It’s important to keep going straight and take the third turn. There will be a large sign prohibiting entry, but hey, we’re on foot, so we’re allowed! 
- 
-You’ll come across a large building with beehives. Go around it on the right and continue through a small clearing, where you can also refill your water supply. 
- 
-From there, the trail continues straight until around kilometre 8. At this point, you can either turn right and explore some more narrow trails or continue straight to reach Cova Negra directly. 
- 
-After completing this loop, you’ll come out onto a wide path with several information boards, followed by a beautiful, large aqueduct. 
- 
+    <cmt>Points:
+- Cova dels Coloms (0.6 km)
+- Cueva de Qanat (1.3 km)
+- Portet de Vernissa (1.6 km)
+- Font de la Quintana (5.0 km)
+- Cueva del águila (8.6 km)
+- Molí Guarner (8.9 km)
+- Cova Negra (9.4 km)
+- Font de la Cova Negra (9.7 km)
+- Arcadetes (11.0 km)
+- Mirador Río Albaida (12.0 km)
+- Pont De La Sequia (14.1 km)
+
+
+Перед маршрутом я поднялся к замку и осмотрел его. Потом при спуске по автомобильной дороге будет несколько возможностей схода на тропу, двигаемся по указателям.
+После поворота в лес важно выбрать правильную тропу и держаться ниже по склону, если держаться на тропе выше, то там будет чей-то импровизировнный шелтер.
+Вскоре вы будете проходить Portet de Vernissa, на него можно зайти и сделать небольшой отдых. Дорога отлично помечена, двигаемся по желто-белым меткам.
+Примерно через 3 км от старта, вы выйдете на автомобильную дорогу, на ней тоже важно идти постоянно прямо, повернув на третем повороте (там будет большая табличка, запрещаяющая въезд, но мы же пешком, нам можно)
+Будет большое здание с улями, его обходим по правой стороне и идем через небольшую просеку, там же можно восполнить запас воды.
+Дальше дорога будет прямо до 8 километра маршрута, на этом этапе вы можете свернуть направо и пройти немного еще по узким тропам, или пойти прямо и выйдти сразу к пещере Cova Negra.
+После заверешния этой петли, вы выйдете на широкую дорогу с стендами с разной информацией, а потом и большим красивым акведуком. Дальше не будет ничего интересного, просто доходим до города.
+
+
+Before starting the route, I went up to the castle and explored it.
+
+On the way down along the road, there will be several opportunities to get onto the trail. Just follow the signs.
+
+After turning into the forest, it’s important to choose the right trail and keep to the lower part of the slope. If you take the higher trail, you’ll come across someone’s makeshift shelter.
+
+Soon, you’ll pass Portet de Vernissa, where you can make a short detour and take a break. The trail is very well marked, so just follow the yellow and white markers.
+
+About 3 km from the starting point, you’ll reach a road. It’s important to keep going straight and take the third turn. There will be a large sign prohibiting entry, but hey, we’re on foot, so we’re allowed!
+
+You’ll come across a large building with beehives. Go around it on the right and continue through a small clearing, where you can also refill your water supply.
+
+From there, the trail continues straight until around kilometre 8. At this point, you can either turn right and explore some more narrow trails or continue straight to reach Cova Negra directly.
+
+After completing this loop, you’ll come out onto a wide path with several information boards, followed by a beautiful, large aqueduct.
+
 There’s nothing particularly interesting after that, so just follow the path back to town.</cmt>
-    <desc>Points: 
-- Cova dels Coloms (0.6 km) 
-- Cueva de Qanat (1.3 km) 
-- Portet de Vernissa (1.6 km) 
-- Font de la Quintana (5.0 km) 
-- Cueva del águila (8.6 km) 
-- Molí Guarner (8.9 km) 
-- Cova Negra (9.4 km) 
-- Font de la Cova Negra (9.7 km) 
-- Arcadetes (11.0 km) 
-- Mirador Río Albaida (12.0 km) 
-- Pont De La Sequia (14.1 km) 
- 
- 
-Перед маршрутом я поднялся к замку и осмотрел его. Потом при спуске по автомобильной дороге будет несколько возможностей схода на тропу, двигаемся по указателям. 
-После поворота в лес важно выбрать правильную тропу и держаться ниже по склону, если держаться на тропе выше, то там будет чей-то импровизировнный шелтер. 
-Вскоре вы будете проходить Portet de Vernissa, на него можно зайти и сделать небольшой отдых. Дорога отлично помечена, двигаемся по желто-белым меткам. 
-Примерно через 3 км от старта, вы выйдете на автомобильную дорогу, на ней тоже важно идти постоянно прямо, повернув на третем повороте (там будет большая табличка, запрещаяющая въезд, но мы же пешком, нам можно) 
-Будет большое здание с улями, его обходим по правой стороне и идем через небольшую просеку, там же можно восполнить запас воды. 
-Дальше дорога будет прямо до 8 километра маршрута, на этом этапе вы можете свернуть направо и пройти немного еще по узким тропам, или пойти прямо и выйдти сразу к пещере Cova Negra. 
-После заверешния этой петли, вы выйдете на широкую дорогу с стендами с разной информацией, а потом и большим красивым акведуком. Дальше не будет ничего интересного, просто доходим до города. 
- 
- 
-Before starting the route, I went up to the castle and explored it. 
- 
-On the way down along the road, there will be several opportunities to get onto the trail. Just follow the signs. 
- 
-After turning into the forest, it’s important to choose the right trail and keep to the lower part of the slope. If you take the higher trail, you’ll come across someone’s makeshift shelter. 
- 
-Soon, you’ll pass Portet de Vernissa, where you can make a short detour and take a break. The trail is very well marked, so just follow the yellow and white markers. 
- 
-About 3 km from the starting point, you’ll reach a road. It’s important to keep going straight and take the third turn. There will be a large sign prohibiting entry, but hey, we’re on foot, so we’re allowed! 
- 
-You’ll come across a large building with beehives. Go around it on the right and continue through a small clearing, where you can also refill your water supply. 
- 
-From there, the trail continues straight until around kilometre 8. At this point, you can either turn right and explore some more narrow trails or continue straight to reach Cova Negra directly. 
- 
-After completing this loop, you’ll come out onto a wide path with several information boards, followed by a beautiful, large aqueduct. 
- 
+    <desc>Points:
+- Cova dels Coloms (0.6 km)
+- Cueva de Qanat (1.3 km)
+- Portet de Vernissa (1.6 km)
+- Font de la Quintana (5.0 km)
+- Cueva del águila (8.6 km)
+- Molí Guarner (8.9 km)
+- Cova Negra (9.4 km)
+- Font de la Cova Negra (9.7 km)
+- Arcadetes (11.0 km)
+- Mirador Río Albaida (12.0 km)
+- Pont De La Sequia (14.1 km)
+
+
+Перед маршрутом я поднялся к замку и осмотрел его. Потом при спуске по автомобильной дороге будет несколько возможностей схода на тропу, двигаемся по указателям.
+После поворота в лес важно выбрать правильную тропу и держаться ниже по склону, если держаться на тропе выше, то там будет чей-то импровизировнный шелтер.
+Вскоре вы будете проходить Portet de Vernissa, на него можно зайти и сделать небольшой отдых. Дорога отлично помечена, двигаемся по желто-белым меткам.
+Примерно через 3 км от старта, вы выйдете на автомобильную дорогу, на ней тоже важно идти постоянно прямо, повернув на третем повороте (там будет большая табличка, запрещаяющая въезд, но мы же пешком, нам можно)
+Будет большое здание с улями, его обходим по правой стороне и идем через небольшую просеку, там же можно восполнить запас воды.
+Дальше дорога будет прямо до 8 километра маршрута, на этом этапе вы можете свернуть направо и пройти немного еще по узким тропам, или пойти прямо и выйдти сразу к пещере Cova Negra.
+После заверешния этой петли, вы выйдете на широкую дорогу с стендами с разной информацией, а потом и большим красивым акведуком. Дальше не будет ничего интересного, просто доходим до города.
+
+
+Before starting the route, I went up to the castle and explored it.
+
+On the way down along the road, there will be several opportunities to get onto the trail. Just follow the signs.
+
+After turning into the forest, it’s important to choose the right trail and keep to the lower part of the slope. If you take the higher trail, you’ll come across someone’s makeshift shelter.
+
+Soon, you’ll pass Portet de Vernissa, where you can make a short detour and take a break. The trail is very well marked, so just follow the yellow and white markers.
+
+About 3 km from the starting point, you’ll reach a road. It’s important to keep going straight and take the third turn. There will be a large sign prohibiting entry, but hey, we’re on foot, so we’re allowed!
+
+You’ll come across a large building with beehives. Go around it on the right and continue through a small clearing, where you can also refill your water supply.
+
+From there, the trail continues straight until around kilometre 8. At this point, you can either turn right and explore some more narrow trails or continue straight to reach Cova Negra directly.
+
+After completing this loop, you’ll come out onto a wide path with several information boards, followed by a beautiful, large aqueduct.
+
 There’s nothing particularly interesting after that, so just follow the path back to town.</desc>
     <trkseg>
       <trkpt lat="38.983339" lon="-0.517301">

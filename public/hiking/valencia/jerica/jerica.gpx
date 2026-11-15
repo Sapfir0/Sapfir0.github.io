@@ -13,85 +13,30 @@
     </link>
     <time>2026-09-19T14:13:57Z</time>
   </metadata>
-  <wpt lat="39.912786" lon="-0.577664">
-    <ele>477.0</ele>
-    <time>2026-10-27T09:20:30.944Z</time>
-    <name>Jérica</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.912073" lon="-0.584453">
-    <ele>565.4</ele>
-    <time>2026-10-27T09:20:30.944Z</time>
-    <name>Views</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.898994" lon="-0.588993">
-    <ele>653.7</ele>
-    <time>2026-10-27T09:20:30.944Z</time>
-    <name>Go left</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.907774" lon="-0.585176">
-    <ele>704.3</ele>
-    <time>2026-10-27T09:20:30.944Z</time>
-    <name>Highest point</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.905502" lon="-0.580703">
-    <ele>615.4</ele>
-    <time>2026-10-27T09:20:30.944Z</time>
-    <name>Viewpoint</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.903632" lon="-0.574849">
-    <ele>580.5</ele>
-    <time>2026-10-27T09:20:30.944Z</time>
-    <name>Viewpoint</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.905768" lon="-0.575459">
-    <ele>468.0</ele>
-    <time>2026-10-27T09:20:30.944Z</time>
-    <name>Tables</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
-  <wpt lat="39.908784" lon="-0.573731">
-    <ele>563.7</ele>
-    <time>2026-10-27T09:20:30.944Z</time>
-    <name>Castle of Jérica</name>
-    <cmt></cmt>
-    <desc></desc>
-  </wpt>
+
   <trk>
     <name>Jérica Hiking - Wikiloc</name>
-    <cmt>Кольцевой маршрут из Jérica через: 
-- Trinchera de la Vegatilla (0.4 km) 
-- Cerro de la Vegatilla (4.8 km) 
-- Alto De Roquetillo (5.4 km) 
-- Cueva Rupilla (6.0 km) 
-- Mirador de la Hoz (7.2 km) 
-- Puente de Navarza (8.0 km) 
-- Parque infantil (8.4 km) 
-- Azud de los Chorradores (9.1 km) 
-- Castillo de Jérica (9.8 km) 
+    <cmt>Кольцевой маршрут из Jérica через:
+- Trinchera de la Vegatilla (0.4 km)
+- Cerro de la Vegatilla (4.8 km)
+- Alto De Roquetillo (5.4 km)
+- Cueva Rupilla (6.0 km)
+- Mirador de la Hoz (7.2 km)
+- Puente de Navarza (8.0 km)
+- Parque infantil (8.4 km)
+- Azud de los Chorradores (9.1 km)
+- Castillo de Jérica (9.8 km)
 - Ermita de San Roque (10.1 km)</cmt>
-    <desc>Кольцевой маршрут из Jérica через: 
-- Trinchera de la Vegatilla (0.4 km) 
-- Cerro de la Vegatilla (4.8 km) 
-- Alto De Roquetillo (5.4 km) 
-- Cueva Rupilla (6.0 km) 
-- Mirador de la Hoz (7.2 km) 
-- Puente de Navarza (8.0 km) 
-- Parque infantil (8.4 km) 
-- Azud de los Chorradores (9.1 km) 
-- Castillo de Jérica (9.8 km) 
+    <desc>Кольцевой маршрут из Jérica через:
+- Trinchera de la Vegatilla (0.4 km)
+- Cerro de la Vegatilla (4.8 km)
+- Alto De Roquetillo (5.4 km)
+- Cueva Rupilla (6.0 km)
+- Mirador de la Hoz (7.2 km)
+- Puente de Navarza (8.0 km)
+- Parque infantil (8.4 km)
+- Azud de los Chorradores (9.1 km)
+- Castillo de Jérica (9.8 km)
 - Ermita de San Roque (10.1 km)</desc>
     <trkseg>
       <trkpt lat="39.912376" lon="-0.577265">

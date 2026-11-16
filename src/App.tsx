@@ -3,7 +3,7 @@ import { useMemo, useState } from 'react';
 import { GpxTrack } from './components/gpx-track.tsx';
 import { Map } from './components/map.tsx';
 import { MAIN_APP_ROUTES, TagFilter } from './const.ts';
-import { REGIONS } from './services/filter-services.tsx';
+import { INITIAL_REGIONS, REGIONS } from './services/filter-services.tsx';
 import { TagSelector } from './components/type-selector.tsx';
 import { ActivityCard } from './components/activity-card.tsx';
 import type { TActivityStructure, TRegionFilter, TTagFilter } from './types.ts';
@@ -14,7 +14,7 @@ import './App.css';
 
 function App() {
   const [currentTab, setCurrentTab] = useState<keyof TActivityStructure>('hiking');
-  const [filtersRegionsList, setFiltersRegionsList] = useState<TRegionFilter[]>(REGIONS);
+  const [filtersRegionsList, setFiltersRegionsList] = useState<TRegionFilter[]>(INITIAL_REGIONS);
   const [tagFiltersList, setTagFiltersList] = useState<Partial<Record<TagFilter, TTagFilter>>>({});
   const [shouldShowMap, setShouldShowMap] = useState<boolean>(false);
 
@@ -72,7 +72,11 @@ function App() {
       <Button onClick={() => setShouldShowMap(!shouldShowMap)}>{shouldShowMap ? 'Hide map' : 'Show map'}</Button>
 
       {shouldShowMap && (
-        <Map>{data.map((activity) => (activity.trackLink ? <GpxTrack url={activity.trackLink} /> : undefined))}</Map>
+        <Map>
+          {data.map((activity) =>
+            'trackLink' in activity && activity.trackLink ? <GpxTrack url={activity.trackLink} /> : undefined
+          )}
+        </Map>
       )}
 
       <Grid container spacing={3} columns={{ xs: 4, sm: 8, md: 12 }}>

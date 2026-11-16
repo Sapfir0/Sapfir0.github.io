@@ -13,14 +13,16 @@ export const REGIONS: TRegionFilter[] = [
   {
     label: 'Asia',
     filter: (hike) => AsiaCountries.includes(hike.country as AsianCountries),
-    defaultSelected: true
+    defaultSelected: false
   },
   {
     label: 'Russia',
     filter: (hike) => hike.country === Russia.Russia,
-    defaultSelected: true
+    defaultSelected: false
   }
 ];
+
+export const INITIAL_REGIONS = REGIONS.filter((region) => region.defaultSelected);
 
 export const TAGS: Record<TagFilter, TTagFilter> = {
   [TagFilter.HighMountains]: {

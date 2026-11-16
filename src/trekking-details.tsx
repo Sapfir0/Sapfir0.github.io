@@ -12,8 +12,10 @@ export function TrekkingDetails({ data }: { data: TTrekking }) {
         {data.name}
       </Typography>
 
-      <Map>
-        <GpxTrack url={data.trackLink} onLoadGpx={() => {}} />
+      <Map height={600}>
+        {data.days.map((day) => (
+          <GpxTrack url={day.trackLink} />
+        ))}
       </Map>
 
       <Typography sx={{ mt: 3, mb: 3 }}>{data.description}</Typography>

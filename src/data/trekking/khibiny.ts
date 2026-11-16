@@ -86,6 +86,5 @@ export const khibinyTrip: TTrekking = {
   days,
   date: new Date(2026, 7),
   temperature: [2, 12],
-  withTent: true,
-  trackLink: '/trekking/khibiny/khibiny-full.gpx'
+  withTent: true
 };

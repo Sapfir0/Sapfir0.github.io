@@ -54,7 +54,10 @@ export function GpxTrack({ url, onLoadGpx }: GpxTrackProps) {
         markers: {
           startIcon:
             'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
-          endIcon: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png'
+          endIcon: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+          wptIcons: {
+            '': 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png'
+          }
         },
         polyline_options: {
           color: '#ff2d95',

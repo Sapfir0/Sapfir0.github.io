@@ -17,6 +17,7 @@ export const hiking: THiking[] = [
     date: new Date(2026, 10, 1),
     withTent: false,
     rating: 7
+    // trackLink: '/hiking/valencia/xeraco/xeraco-monduver-ruta-3.gpx'
   },
   {
     name: 'PR-CV 369 Estivella - Penya Roja',
@@ -120,7 +121,8 @@ export const hiking: THiking[] = [
     internetAvailability: InternetAvailability.FullCover,
     easyPublicTransportation: EasyPublicTransportation.ByBus,
     temperature: 15.6,
-    date: new Date(2026, 3)
+    date: new Date(2026, 3),
+    trackLink: '/hiking/south-korea/hallasan-mountain-seongpanak-to-gwaneumsa.gpx'
   },
   {
     name: 'Two viewpoints in Vang Vieng | Silver Cliff, Pha Nguen',
@@ -134,7 +136,8 @@ export const hiking: THiking[] = [
     internetAvailability: InternetAvailability.FullCover,
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 24.4,
-    date: new Date(2025, 11)
+    date: new Date(2025, 11),
+    trackLink: '/hiking/two-viewpoints-in-vang-vieng.gpx'
   },
   {
     name: 'Sary-Chelek | Six Lakes trail',

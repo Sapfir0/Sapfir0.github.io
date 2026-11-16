@@ -13,7 +13,8 @@ const days: TDay[] = [
     maxElevation: 393,
     image: '',
     description: '',
-    link: 'https://connect.garmin.com/app/activity/19758646272'
+    link: 'https://connect.garmin.com/app/activity/17500613387',
+    trackLink: '/trekking/west-caucasus/day-1.gpx'
   },
   {
     distance: 12.75,
@@ -23,7 +24,8 @@ const days: TDay[] = [
     maxElevation: 960,
     image: '',
     description: '',
-    link: 'https://connect.garmin.com/app/activity/19758646460'
+    link: 'https://connect.garmin.com/app/activity/17500613909',
+    trackLink: '/trekking/west-caucasus/day-2.gpx'
   },
   {
     distance: 7.77,
@@ -33,7 +35,8 @@ const days: TDay[] = [
     maxElevation: 1679,
     image: '',
     description: '',
-    link: 'https://connect.garmin.com/app/activity/17500614232'
+    link: 'https://connect.garmin.com/app/activity/17500614232',
+    trackLink: '/trekking/west-caucasus/day-3.gpx'
   },
   {
     distance: 18.67,
@@ -43,7 +46,8 @@ const days: TDay[] = [
     maxElevation: 1687,
     image: '',
     description: '',
-    link: 'https://connect.garmin.com/app/activity/17500623672'
+    link: 'https://connect.garmin.com/app/activity/17500623672',
+    trackLink: '/trekking/west-caucasus/day-4.gpx'
   },
   {
     distance: 17.16,
@@ -53,12 +57,12 @@ const days: TDay[] = [
     maxElevation: 641,
     image: '',
     description: '',
-    link: 'https://connect.garmin.com/app/activity/17500614917'
+    link: 'https://connect.garmin.com/app/activity/17500614917',
+    trackLink: '/trekking/west-caucasus/day-5.gpx'
   }
 ];
 
 export const westCaucasus: TTrekking = {
-  trackLink: '/west-caucasus/west-caucasus-full.gpx',
   name: 'West Caucasus',
   distance: 35.63,
   accent: 1507,
@@ -76,5 +80,6 @@ export const westCaucasus: TTrekking = {
   easyPublicTransportation: EasyPublicTransportation.PrivateTransfer,
   wildCamping: WildCamp.WildCampAllowed,
   temperature: [-5, 10],
-  withTent: true
+  withTent: true,
+  link: 'west-caucasus'
 };

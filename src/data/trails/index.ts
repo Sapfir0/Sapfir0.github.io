@@ -14,7 +14,8 @@ export const trails: THiking[] = [
     internetAvailability: InternetAvailability.FullCover,
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 26.7,
-    date: new Date(2026, 3)
+    date: new Date(2026, 3),
+    trackLink: '/trails/run-inwangsan-and-bugaksan-mountains.gpx'
   },
   {
     name: 'Around Haukijärvi lake',
@@ -28,7 +29,8 @@ export const trails: THiking[] = [
     internetAvailability: InternetAvailability.UnstableConnection,
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 10.6,
-    date: new Date(2026, 3) // 'Apr. 2026'
+    date: new Date(2026, 3),
+    trackLink: '/trails/run-kruzhok-vokrug-ozera-shchuche.gpx'
   },
   {
     name: 'From Siestarjoki to Zelenogorsk',
@@ -42,7 +44,8 @@ export const trails: THiking[] = [
     internetAvailability: InternetAvailability.NoConnection,
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 6.7,
-    date: new Date(2026, 2) // 'Mar. 2026'
+    date: new Date(2026, 2),
+    trackLink: '/trails/run-iz-sestroretska-v-zelenogorsk.gpx'
   },
   {
     name: 'Kandalaksha Trail',
@@ -56,6 +59,7 @@ export const trails: THiking[] = [
     internetAvailability: InternetAvailability.UnstableConnection,
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 3.9,
-    date: new Date(2026, 2) // 'March 2026'
+    date: new Date(2026, 2),
+    trackLink: '/trails/kandalaksha-trail-road-avrora-treil-luch-2026.gpx'
   }
 ];

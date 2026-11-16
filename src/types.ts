@@ -20,7 +20,7 @@ export type TDay = {
   image?: string;
   description?: string;
   link?: string;
-  trackLink?: string;
+  trackLink: string;
 };
 
 export type TActivity = {
@@ -41,16 +41,17 @@ export type TActivity = {
   easyPublicTransportation: (typeof EasyPublicTransportation)[keyof typeof EasyPublicTransportation];
   date: Date;
   rating?: number;
-  trackLink?: string;
 };
 
 export type TTrekking = {
   days: TDay[];
   temperature: [number, number];
   wildCamping: (typeof WildCamp)[keyof typeof WildCamp];
-  trackLink: string;
 } & TActivity;
-export type THiking = { temperature: number } & TActivity;
+export type THiking = {
+  temperature: number;
+  trackLink?: string;
+} & TActivity;
 
 export type TActivityStructure = {
   trekking: TTrekking[];

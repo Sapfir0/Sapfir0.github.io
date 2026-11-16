@@ -1,9 +1,9 @@
 import React from 'react';
 import { MapContainer, TileLayer } from 'react-leaflet';
 
-export function Map({ children, zoom }: { children: React.ReactNode; zoom?: number }) {
+export function Map({ children, zoom, height }: { children: React.ReactNode; zoom?: number; height?: number }) {
   return (
-    <MapContainer center={[51.505, -0.09]} zoom={zoom ?? 13} scrollWheelZoom={false} style={{ height: 350 }}>
+    <MapContainer center={[51.505, -0.09]} zoom={zoom ?? 13} scrollWheelZoom={false} style={{ height: height ?? 350 }}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

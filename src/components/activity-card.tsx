@@ -69,7 +69,7 @@ export function ActivityCard({ activity, setTagFilters, tagFilters }: TActivityC
         >
           <ActivityParam
             title="Distance"
-            value={Math.round(activity.distance)}
+            value={activity.distance.toFixed(1)}
             suffix="km"
             icon={<RouteIcon color="disabled" />}
           />

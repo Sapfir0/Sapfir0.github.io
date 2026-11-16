@@ -14,7 +14,8 @@ export const russianHikes: THiking[] = [
     internetAvailability: InternetAvailability.NoConnection,
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: -3.9,
-    date: new Date(2024, 11) // 'Dec. 2024'
+    date: new Date(2024, 11),
+    trackLink: '/hiking/leningrad-oblast/orechovo-circle-kruzhok-cherez-polianu-pkt.gpx'
   },
   {
     name: 'Lakes near Petäjärvi',
@@ -29,7 +30,8 @@ export const russianHikes: THiking[] = [
     internetAvailability: InternetAvailability.NoConnection,
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 4.4,
-    date: new Date(2025, 2) // 'March 2025'
+    date: new Date(2025, 2),
+    trackLink: '/hiking/leningrad-oblast/pettarvi-circle-petiaiarvi-i-ozera-berestianoe-i-dubovoe.gpx'
   },
   {
     name: 'From Kapeasalmi to Kuznechnoe by Ladoga lake shore',
@@ -44,7 +46,8 @@ export const russianHikes: THiking[] = [
     internetAvailability: InternetAvailability.NoConnection,
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 16.8,
-    date: new Date(2025, 5) // 'June 2025'
+    date: new Date(2025, 5),
+    trackLink: '/hiking/leningrad-oblast/kapeasalmi-to-kuznechnoe-len-oblast.gpx'
   },
   {
     name: 'Yastrebinoe lake',
@@ -59,6 +62,7 @@ export const russianHikes: THiking[] = [
     internetAvailability: InternetAvailability.NoConnection,
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 17.1,
-    date: new Date(2025, 7) //'Aug. 2025'
+    date: new Date(2025, 7),
+    trackLink: '/hiking/leningrad-oblast/yastrebinoe-lake-hike.gpx'
   }
 ];

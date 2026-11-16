@@ -16,6 +16,7 @@ export const water: THiking[] = [
     date: new Date(2025, 5, 7),
     withTent: false,
     rating: 3,
-    wikiLoc: 'https://www.wikiloc.com/kayaking-canoeing-trails/petrovskii-grebnoi-marafon-249988440'
+    wikiLoc: 'https://www.wikiloc.com/kayaking-canoeing-trails/petrovskii-grebnoi-marafon-249988440',
+    trackLink: '/water/petrovskii-grebnoi-marafon.gpx'
   }
 ];

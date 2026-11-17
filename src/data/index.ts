@@ -1,4 +1,4 @@
-import { water } from './water';
+import { kayaking } from './kayaking';
 import { hiking } from './hiking';
 import { trails } from './trails';
 import { khibinyTrip } from './trekking/khibiny.ts';
@@ -10,7 +10,7 @@ import type { TActivity, TActivityStructure, THiking } from '../lib/types.ts';
 export const activities: TActivityStructure = {
   hiking: [...hiking, ...trails],
   trekking: [arhyzTrip, khibinyTrip, westCaucasus],
-  water
+  kayaking
 };
 
 function isHikingLike(activity: TActivity): activity is THiking {

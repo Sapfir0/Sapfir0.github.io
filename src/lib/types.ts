@@ -23,7 +23,6 @@ export type TDay = {
 };
 
 export type TActivity = {
-  slug: string;
   name: string;
   region: TRegion;
   distance: number;
@@ -45,6 +44,8 @@ export type TActivity = {
 };
 
 export type TTrekking = {
+  /** Internal route path for the trekking details page. */
+  slug: string;
   days: TDay[];
   temperature: [number, number];
   wildCamping: WildCamp;
@@ -58,7 +59,7 @@ export type THiking = {
 export type TActivityStructure = {
   hiking: THiking[];
   trekking: TTrekking[];
-  water: THiking[];
+  kayaking: THiking[];
 };
 
 export type TGpxData = {

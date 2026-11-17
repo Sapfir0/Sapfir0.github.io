@@ -5,7 +5,6 @@ import type { TActivity } from './types.ts';
 
 function createActivity(overrides: Partial<TActivity> = {}): TActivity {
   return {
-    slug: 'test-activity',
     name: 'Test activity',
     region: 'Europe',
     distance: 10,

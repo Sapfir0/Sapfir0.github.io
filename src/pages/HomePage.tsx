@@ -70,7 +70,7 @@ export function HomePage() {
       ) : (
         <Grid container spacing={3} columns={{ xs: 4, sm: 8, md: 12 }}>
           {data.map((activity) => (
-            <Grid key={activity.slug} size={{ xs: 4, sm: 8, md: isLongCards ? 6 : 4 }}>
+            <Grid key={activity.name} size={{ xs: 4, sm: 8, md: isLongCards ? 6 : 4 }}>
               <ActivityCard activity={activity} onTagClick={toggleTag} tagFilters={tagFiltersList} />
             </Grid>
           ))}

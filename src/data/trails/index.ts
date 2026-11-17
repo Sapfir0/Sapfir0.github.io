@@ -3,7 +3,6 @@ import { type THiking } from '../../lib/types.ts';
 
 export const trails: THiking[] = [
   {
-    slug: 'inwangsan-bugaksan-run',
     name: 'Inwangsan and Bugaksan mountains',
     distance: 14.84,
     ascent: 674,
@@ -21,7 +20,6 @@ export const trails: THiking[] = [
     trackLink: '/trails/run-inwangsan-and-bugaksan-mountains.gpx'
   },
   {
-    slug: 'around-haukijarvi-lake',
     name: 'Around Haukijärvi lake',
     distance: 21.75,
     ascent: 130,
@@ -39,7 +37,6 @@ export const trails: THiking[] = [
     trackLink: '/trails/run-kruzhok-vokrug-ozera-shchuche.gpx'
   },
   {
-    slug: 'siestarjoki-zelenogorsk-run',
     name: 'From Siestarjoki to Zelenogorsk',
     distance: 24.02,
     ascent: 43,
@@ -57,7 +54,6 @@ export const trails: THiking[] = [
     trackLink: '/trails/run-iz-sestroretska-v-zelenogorsk.gpx'
   },
   {
-    slug: 'kandalaksha-trail',
     name: 'Kandalaksha Trail',
     distance: 14.96,
     ascent: 561,

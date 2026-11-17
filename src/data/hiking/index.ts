@@ -4,7 +4,6 @@ import { type THiking } from '../../lib/types.ts';
 
 export const hiking: THiking[] = [
   {
-    slug: 'xeresa-monduver-xeraco',
     name: 'Xeresa - Mondúver - Xeraco',
     distance: 17.75,
     ascent: 1009,
@@ -22,7 +21,6 @@ export const hiking: THiking[] = [
     trackLink: '/hiking/valencia/xeresa/xeresa-xeraco.gpx'
   },
   {
-    slug: 'pr-cv-369-estivella-penya-roja',
     name: 'PR-CV 369 Estivella - Penya Roja',
     distance: 22.05,
     ascent: 888,
@@ -40,7 +38,6 @@ export const hiking: THiking[] = [
     trackLink: '/hiking/valencia/estivella/estivella.gpx'
   },
   {
-    slug: 'xeraco-monduver-ruta-3',
     name: 'Xeraco - Mondúver | Ruta 3',
     distance: 14.25,
     ascent: 940,
@@ -57,7 +54,6 @@ export const hiking: THiking[] = [
     date: '2026-11-01'
   },
   {
-    slug: 'mola-de-segart',
     name: 'Mola de Segart',
     distance: 9.88,
     ascent: 455,
@@ -73,7 +69,6 @@ export const hiking: THiking[] = [
     externalLink: 'https://www.wikiloc.com/hiking-trails/mola-de-segart-296872663'
   },
   {
-    slug: 'pr-cv-78-xativa',
     name: 'PR-CV 78 | Circle around Xàtiva',
     distance: 15.67,
     ascent: 361,
@@ -90,7 +85,6 @@ export const hiking: THiking[] = [
     date: '2026-10-19'
   },
   {
-    slug: 'montesa-enguera',
     name: 'Montesa to Enguera',
     distance: 17.13,
     ascent: 669,
@@ -107,7 +101,6 @@ export const hiking: THiking[] = [
     date: '2026-10-09'
   },
   {
-    slug: 'jerica-hiking',
     name: 'Jérica Hiking',
     distance: 10.54,
     ascent: 384,
@@ -124,7 +117,6 @@ export const hiking: THiking[] = [
     date: '2026-09-10'
   },
   {
-    slug: 'hallasan-seongpanak-gwaneumsa',
     name: 'Hallasan mountain - Seongpanak to Gwaneumsa',
     distance: 19.51,
     ascent: 1263,
@@ -141,7 +133,6 @@ export const hiking: THiking[] = [
     trackLink: '/hiking/south-korea/hallasan-mountain-seongpanak-to-gwaneumsa.gpx'
   },
   {
-    slug: 'vang-vieng-two-viewpoints',
     name: 'Two viewpoints in Vang Vieng | Silver Cliff, Pha Nguen',
     distance: 13.62,
     ascent: 536,
@@ -158,7 +149,6 @@ export const hiking: THiking[] = [
     trackLink: '/hiking/two-viewpoints-in-vang-vieng.gpx'
   },
   {
-    slug: 'sary-chelek-six-lakes',
     name: 'Sary-Chelek | Six Lakes trail',
     distance: 10.11,
     ascent: 672,

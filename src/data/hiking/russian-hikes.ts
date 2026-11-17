@@ -3,7 +3,6 @@ import { type THiking } from '../../lib/types.ts';
 
 export const russianHikes: THiking[] = [
   {
-    slug: 'orekhovo-winter',
     name: 'Orekhovo at winter',
     distance: 22.82,
     ascent: 219,
@@ -20,7 +19,6 @@ export const russianHikes: THiking[] = [
     trackLink: '/hiking/leningrad-oblast/orechovo-circle-kruzhok-cherez-polianu-pkt.gpx'
   },
   {
-    slug: 'petajarvi-lakes',
     name: 'Lakes near Petäjärvi',
     distance: 23.21,
     ascent: 219,
@@ -39,7 +37,6 @@ export const russianHikes: THiking[] = [
     trackLink: '/hiking/leningrad-oblast/pettarvi-circle-petiaiarvi-i-ozera-berestianoe-i-dubovoe.gpx'
   },
   {
-    slug: 'kapeasalmi-kuznechnoe',
     name: 'From Kapeasalmi to Kuznechnoe by Ladoga lake shore',
     distance: 25.8,
     ascent: 95,
@@ -57,7 +54,6 @@ export const russianHikes: THiking[] = [
     trackLink: '/hiking/leningrad-oblast/kapeasalmi-to-kuznechnoe-len-oblast.gpx'
   },
   {
-    slug: 'yastrebinoe-lake',
     name: 'Yastrebinoe lake',
     distance: 47,
     ascent: 395,

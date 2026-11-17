@@ -1,9 +1,8 @@
 import { Country, EasyPublicTransportation, InternetAvailability } from '../../lib/constants.ts';
 import type { THiking } from '../../lib/types.ts';
 
-export const water: THiking[] = [
+export const kayaking: THiking[] = [
   {
-    slug: 'petrovskii-marathon',
     name: 'Marathon of Peter',
     distance: 46.35,
     ascent: 38,

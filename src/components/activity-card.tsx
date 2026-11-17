@@ -40,8 +40,11 @@ function temperatureLabel(activity: TActivity): string | undefined {
 }
 
 export function ActivityCard({ activity, onTagClick, tagFilters }: TActivityCardProps) {
-  const href = activity.slug || activity.externalLink;
-  const days = isTrekking(activity) ? activity.days : undefined;
+  // Trekking activities link to the internal details page, the rest to the
+  // external trail page.
+  const isTrek = isTrekking(activity);
+  const href = isTrek ? activity.slug : activity.externalLink;
+  const days = isTrek ? activity.days : undefined;
   const temperature = temperatureLabel(activity);
 
   return (

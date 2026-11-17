@@ -43,5 +43,5 @@ export const MAIN_APP_ROUTES = {
 export const ACTIVITY_TAB_LABELS = {
   hiking: 'Hiking',
   trekking: 'Trekking',
-  water: 'Water'
+  kayaking: 'Kayaking'
 } as const;

@@ -16,7 +16,6 @@ export const kayaking: THiking[] = [
     internetAvailability: InternetAvailability.FullCover,
     date: '2025-06-07',
     withTent: false,
-    rating: 3,
     externalLink: 'https://www.wikiloc.com/kayaking-canoeing-trails/petrovskii-grebnoi-marafon-249988440',
     trackLink: '/water/petrovskii-grebnoi-marafon.gpx'
   }

@@ -1,11 +1,13 @@
-import { Country, EasyPublicTransportation, InternetAvailability } from '../../const.ts';
-import type { THiking } from '../../types.ts';
+import { Country, EasyPublicTransportation, InternetAvailability } from '../../lib/constants.ts';
+import type { THiking } from '../../lib/types.ts';
 
 export const water: THiking[] = [
   {
+    slug: 'petrovskii-marathon',
     name: 'Marathon of Peter',
     distance: 46.35,
-    accent: 38,
+    ascent: 38,
+    region: 'Russia',
     country: Country.Russia,
     district: 'Leningrad Oblast',
     description: '',
@@ -13,10 +15,10 @@ export const water: THiking[] = [
     temperature: 17.2,
     easyPublicTransportation: EasyPublicTransportation.ByBus,
     internetAvailability: InternetAvailability.FullCover,
-    date: new Date(2025, 5, 7),
+    date: '2025-06-07',
     withTent: false,
     rating: 3,
-    wikiLoc: 'https://www.wikiloc.com/kayaking-canoeing-trails/petrovskii-grebnoi-marafon-249988440',
+    externalLink: 'https://www.wikiloc.com/kayaking-canoeing-trails/petrovskii-grebnoi-marafon-249988440',
     trackLink: '/water/petrovskii-grebnoi-marafon.gpx'
   }
 ];

@@ -1,65 +1,78 @@
-import { Country, EasyPublicTransportation, InternetAvailability } from '../../const.ts';
-import { type THiking } from '../../types.ts';
+import { Country, EasyPublicTransportation, InternetAvailability } from '../../lib/constants.ts';
+import { type THiking } from '../../lib/types.ts';
 
 export const trails: THiking[] = [
   {
+    slug: 'inwangsan-bugaksan-run',
     name: 'Inwangsan and Bugaksan mountains',
     distance: 14.84,
-    accent: 674,
+    ascent: 674,
+    region: 'Asia',
     country: Country.SouthKorea,
     district: 'Seoul',
-    wikiLoc: 'https://www.wikiloc.com/trail-running-trails/run-inwangsan-and-bugaksan-mountains-263841529',
+    externalLink: 'https://www.wikiloc.com/trail-running-trails/run-inwangsan-and-bugaksan-mountains-263841529',
     description: '',
     image: '/trails/inwangsan.jpg',
     internetAvailability: InternetAvailability.FullCover,
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 26.7,
-    date: new Date(2026, 3),
+    date: '2026-04-01',
+    run: true,
     trackLink: '/trails/run-inwangsan-and-bugaksan-mountains.gpx'
   },
   {
+    slug: 'around-haukijarvi-lake',
     name: 'Around Haukijärvi lake',
     distance: 21.75,
-    accent: 130,
+    ascent: 130,
+    region: 'Russia',
     country: Country.Russia,
     district: 'Leningrad Oblast',
-    wikiLoc: 'https://www.wikiloc.com/trail-running-trails/run-kruzhok-vokrug-ozera-shchuche-259176647',
+    externalLink: 'https://www.wikiloc.com/trail-running-trails/run-kruzhok-vokrug-ozera-shchuche-259176647',
     description: '',
     image: '/trails/shchuche.jpg',
     internetAvailability: InternetAvailability.UnstableConnection,
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 10.6,
-    date: new Date(2026, 3),
+    date: '2026-04-01',
+    run: true,
     trackLink: '/trails/run-kruzhok-vokrug-ozera-shchuche.gpx'
   },
   {
+    slug: 'siestarjoki-zelenogorsk-run',
     name: 'From Siestarjoki to Zelenogorsk',
     distance: 24.02,
-    accent: 43,
+    ascent: 43,
+    region: 'Russia',
     country: Country.Russia,
     district: 'Leningrad Oblast',
-    wikiLoc: 'https://www.wikiloc.com/running-trails/run-iz-sestroretska-v-zelenogorsk-256781104',
+    externalLink: 'https://www.wikiloc.com/running-trails/run-iz-sestroretska-v-zelenogorsk-256781104',
     description: '',
     image: '/trails/sestoretsk-to-zelenogorsk.jpg',
     internetAvailability: InternetAvailability.NoConnection,
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 6.7,
-    date: new Date(2026, 2),
+    date: '2026-03-01',
+    run: true,
     trackLink: '/trails/run-iz-sestroretska-v-zelenogorsk.gpx'
   },
   {
+    slug: 'kandalaksha-trail',
     name: 'Kandalaksha Trail',
     distance: 14.96,
-    accent: 561,
+    ascent: 561,
+    region: 'Russia',
     country: Country.Russia,
     district: 'Murmansk Oblast',
-    wikiLoc: 'https://www.wikiloc.com/trail-running-trails/kandalaksha-trail-road-avrora-treil-luch-2026-254512489',
+    externalLink:
+      'https://www.wikiloc.com/trail-running-trails/kandalaksha-trail-road-avrora-treil-luch-2026-254512489',
     description: '',
     image: '/trails/kandalaksha.jpg',
     internetAvailability: InternetAvailability.UnstableConnection,
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     temperature: 3.9,
-    date: new Date(2026, 2),
+    date: '2026-03-01',
+    run: true,
     trackLink: '/trails/kandalaksha-trail-road-avrora-treil-luch-2026.gpx'
   }
 ];

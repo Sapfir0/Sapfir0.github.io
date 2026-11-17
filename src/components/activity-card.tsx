@@ -1,26 +1,48 @@
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
+import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
+import EventIcon from '@mui/icons-material/Event';
+import FestivalIcon from '@mui/icons-material/Festival';
 import MovingIcon from '@mui/icons-material/Moving';
 import PlaceIcon from '@mui/icons-material/Place';
 import RouteIcon from '@mui/icons-material/Route';
+import StarIcon from '@mui/icons-material/Star';
+import ThermostatIcon from '@mui/icons-material/Thermostat';
 import { Box, Card, CardContent, CardMedia, Divider, Link, Typography } from '@mui/material';
-import { useRef } from 'react';
-import { ActivityIcons } from '../components/activity-icons.tsx';
-import { TagFilter } from '../const.ts';
-import { RunChip, TentChip } from './chips.tsx';
-import { ActivityParam } from './activity-paramater.tsx';
-import type { TActivity, TTagFilter } from '../types.ts';
+import { TagFilter } from '../lib/constants.ts';
+import type { TActivity, TTagFilter, THiking, TTrekking } from '../lib/types.ts';
+import { formatMonthYear } from '../utils/formatter.ts';
+import { ActivityIcons } from './activity-icons.tsx';
+import { ActivityParam } from './activity-parameter.tsx';
+import { TagChip } from './tag-chip.tsx';
 
 type TActivityCardProps = {
   activity: TActivity;
-  setTagFilters: (tag: TTagFilter) => void;
+  onTagClick: (tag: TTagFilter) => void;
   tagFilters: Partial<Record<TagFilter, TTagFilter>>;
 };
 
-export function ActivityCard({ activity, setTagFilters, tagFilters }: TActivityCardProps) {
-  const ref = useRef<HTMLDivElement>(null);
+function isTrekking(activity: TActivity): activity is TTrekking {
+  return 'days' in activity;
+}
 
-  const href = activity.link ?? activity.wikiLoc;
-  const days = 'days' in activity && Array.isArray(activity.days) ? activity.days : undefined;
+function hasTemperature(activity: TActivity): activity is TTrekking | THiking {
+  return 'temperature' in activity;
+}
+
+function temperatureLabel(activity: TActivity): string | undefined {
+  if (!hasTemperature(activity)) {
+    return undefined;
+  }
+
+  const temperature = activity.temperature;
+
+  return typeof temperature === 'number' ? `${temperature}\u00B0C` : `${temperature[0]}\u2026${temperature[1]}\u00B0C`;
+}
+
+export function ActivityCard({ activity, onTagClick, tagFilters }: TActivityCardProps) {
+  const href = activity.slug || activity.externalLink;
+  const days = isTrekking(activity) ? activity.days : undefined;
+  const temperature = temperatureLabel(activity);
 
   return (
     <Card
@@ -29,15 +51,29 @@ export function ActivityCard({ activity, setTagFilters, tagFilters }: TActivityC
         boxShadow: '0 4px 16px rgba(0, 0, 0, 0.08)',
         height: '100%'
       }}
-      ref={ref}
     >
-      {activity.withTent && <TentChip onClick={setTagFilters} selected={TagFilter.WithTent in tagFilters} />}
-      {activity.run && <RunChip onClick={setTagFilters} selected={TagFilter.Running in tagFilters} />}
+      {activity.withTent && (
+        <TagChip
+          tag={TagFilter.WithTent}
+          icon={<FestivalIcon />}
+          color="success"
+          selected={TagFilter.WithTent in tagFilters}
+          onClick={onTagClick}
+        />
+      )}
+      {activity.run && (
+        <TagChip
+          tag={TagFilter.Running}
+          icon={<DirectionsRunIcon />}
+          color="primary"
+          selected={TagFilter.Running in tagFilters}
+          onClick={onTagClick}
+        />
+      )}
 
       <CardMedia component="img" height="250" image={activity.image} alt={activity.name} loading="lazy" />
       <CardContent
         sx={{
-          // height: '190px',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between'
@@ -58,15 +94,7 @@ export function ActivityCard({ activity, setTagFilters, tagFilters }: TActivityC
           </Typography>
         </Box>
 
-        <Box
-          sx={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            flexWrap: 'wrap',
-            gap: '20px',
-            mt: 1.5
-          }}
-        >
+        <Box sx={{ display: 'inline-flex', alignItems: 'center', flexWrap: 'wrap', gap: '20px', mt: 1.5 }}>
           <ActivityParam
             title="Distance"
             value={activity.distance.toFixed(1)}
@@ -74,7 +102,7 @@ export function ActivityCard({ activity, setTagFilters, tagFilters }: TActivityC
             icon={<RouteIcon color="disabled" />}
           />
           <Divider orientation="vertical" flexItem />
-          <ActivityParam title="Ascent" value={activity.accent} suffix="m" icon={<MovingIcon color="disabled" />} />
+          <ActivityParam title="Ascent" value={activity.ascent} suffix="m" icon={<MovingIcon color="disabled" />} />
 
           {days && (
             <>
@@ -82,8 +110,23 @@ export function ActivityCard({ activity, setTagFilters, tagFilters }: TActivityC
               <ActivityParam title="Days" value={days.length} icon={<CalendarTodayIcon color="disabled" />} />
             </>
           )}
+        </Box>
 
+        <Box sx={{ display: 'inline-flex', alignItems: 'center', flexWrap: 'wrap', gap: '20px', mt: 1 }}>
+          <ActivityParam title="Date" value={formatMonthYear(activity.date)} icon={<EventIcon color="disabled" />} />
           <Divider orientation="vertical" flexItem />
+          {temperature && (
+            <>
+              <ActivityParam title="Temperature" value={temperature} icon={<ThermostatIcon color="disabled" />} />
+              <Divider orientation="vertical" flexItem />
+            </>
+          )}
+          {activity.rating !== undefined && (
+            <>
+              <ActivityParam title="Rating" value={`${activity.rating}/10`} icon={<StarIcon color="disabled" />} />
+              <Divider orientation="vertical" flexItem />
+            </>
+          )}
           <ActivityIcons activity={activity} />
         </Box>
       </CardContent>

@@ -1,10 +1,10 @@
-import { type Country, EasyPublicTransportation, InternetAvailability, TagFilter, WildCamp } from './const.ts';
+import type { Country, EasyPublicTransportation, InternetAvailability, TagFilter, WildCamp } from './constants.ts';
 
 export type TRegion = 'Europe' | 'Asia' | 'Russia';
 
 export type TFilter<TLabel extends string = TRegion | TagFilter> = {
   label: TLabel;
-  filter: (data: TActivity) => boolean;
+  filter: (activity: TActivity) => boolean;
   defaultSelected?: boolean;
 };
 
@@ -13,56 +13,57 @@ export type TTagFilter = TFilter<TagFilter>;
 
 export type TDay = {
   distance?: number;
-  accent?: number;
+  ascent?: number;
   descent?: number;
   minElevation?: number;
   maxElevation?: number;
-  image?: string;
   description?: string;
-  link?: string;
+  externalLink?: string;
   trackLink: string;
 };
 
 export type TActivity = {
+  slug: string;
   name: string;
+  region: TRegion;
   distance: number;
-  country: (typeof Country)[keyof typeof Country];
-  accent: number;
-  wikiLoc?: string;
+  country: Country;
+  ascent: number;
+  externalLink?: string;
   mountainSystem?: string;
   district: string;
-  region?: string;
   image: string;
   description: string;
-  link?: string;
   run?: boolean;
   withTent?: boolean;
-  internetAvailability: (typeof InternetAvailability)[keyof typeof InternetAvailability];
-  easyPublicTransportation: (typeof EasyPublicTransportation)[keyof typeof EasyPublicTransportation];
-  date: Date;
+  highMountains?: boolean;
+  internetAvailability: InternetAvailability;
+  easyPublicTransportation: EasyPublicTransportation;
+  /** ISO date, YYYY-MM-DD. */
+  date: string;
   rating?: number;
 };
 
 export type TTrekking = {
   days: TDay[];
   temperature: [number, number];
-  wildCamping: (typeof WildCamp)[keyof typeof WildCamp];
+  wildCamping: WildCamp;
 } & TActivity;
+
 export type THiking = {
   temperature: number;
   trackLink?: string;
 } & TActivity;
 
 export type TActivityStructure = {
-  trekking: TTrekking[];
   hiking: THiking[];
+  trekking: TTrekking[];
   water: THiking[];
 };
 
 export type TGpxData = {
   distance: number;
-  elevationData: Array<[number, number, string]>;
-  accent: number;
+  ascent: number;
   descent: number;
   elevationMax: number;
   elevationMin: number;

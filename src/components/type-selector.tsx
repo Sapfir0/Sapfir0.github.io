@@ -1,6 +1,6 @@
 import { ToggleButton, ToggleButtonGroup } from '@mui/material';
 import type { MouseEvent } from 'react';
-import type { TFilter } from '../types.ts';
+import type { TFilter } from '../lib/types.ts';
 
 type TTagSelectorProps<T extends TFilter> = {
   tags: T[];

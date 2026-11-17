@@ -32,6 +32,8 @@ function loadLeafletGlobal(): Promise<void> {
   });
 }
 
+const COLORS = ['blue', 'red', 'purple', 'green', 'black'];
+
 export function GpxTrack({ url, onLoadGpx }: GpxTrackProps) {
   const map = useMap();
 
@@ -60,7 +62,7 @@ export function GpxTrack({ url, onLoadGpx }: GpxTrackProps) {
           }
         },
         polyline_options: {
-          color: '#ff2d95',
+          color: COLORS[Math.floor(Math.random() * COLORS.length)],
           weight: 4,
           opacity: 0.8
         }

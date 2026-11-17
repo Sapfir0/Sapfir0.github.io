@@ -10,14 +10,15 @@ export const hiking: THiking[] = [
     country: Country.Spain,
     district: 'Valencia',
     description: '',
-    image: '/hiking/valencia/xeraco/xeresa-xeraco.jpeg',
+    image: '/hiking/valencia/xeresa/xeresa-xeraco.jpeg',
     temperature: 17.8,
     easyPublicTransportation: EasyPublicTransportation.ByTrain,
     internetAvailability: InternetAvailability.FullCover,
     date: new Date(2026, 10, 1),
     withTent: false,
-    rating: 7
-    // trackLink: '/hiking/valencia/xeraco/xeraco-monduver-ruta-3.gpx'
+    rating: 6,
+    wikiLoc: 'https://www.wikiloc.com/hiking-trails/xeresa-monduver-xeraco-296838011',
+    trackLink: '/hiking/valencia/xeresa/xeresa-xeraco.gpx'
   },
   {
     name: 'PR-CV 369 Estivella - Penya Roja',
@@ -32,7 +33,8 @@ export const hiking: THiking[] = [
     internetAvailability: InternetAvailability.FullCover,
     date: new Date(2026, 10, 1),
     withTent: false,
-    rating: 3
+    rating: 3,
+    wikiLoc: 'https://www.wikiloc.com/hiking-trails/pr-cv-369-estivella-penya-roja-296870897'
   },
   {
     name: 'Xeraco - Mondúver | Ruta 3',
@@ -62,7 +64,8 @@ export const hiking: THiking[] = [
     easyPublicTransportation: EasyPublicTransportation.PrivateTransfer,
     internetAvailability: InternetAvailability.UnstableConnection,
     date: new Date(2026, 10, 1),
-    rating: 6
+    rating: 6,
+    wikiLoc: 'https://www.wikiloc.com/hiking-trails/mola-de-segart-296872663'
   },
   {
     name: 'PR-CV 78 | Circle around Xàtiva',

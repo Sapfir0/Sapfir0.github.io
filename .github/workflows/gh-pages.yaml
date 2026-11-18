@@ -9,6 +9,10 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v6
+        with:
+          # Fetch real GPX files; without this, the runner keeps LFS pointers
+          # and the deployed site serves pointer text instead of GPX content.
+          lfs: true
 
       - name: Install dependencies 🔧
         run: yarn

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { Country, EasyPublicTransportation, InternetAvailability, TagFilter } from './constants.ts';
-import { INITIAL_REGIONS, REGIONS, TAGS } from './filters.ts';
+import { REGIONS, TAGS } from './filters.ts';
 import type { TActivity } from './types.ts';
 
 function createActivity(overrides: Partial<TActivity> = {}): TActivity {

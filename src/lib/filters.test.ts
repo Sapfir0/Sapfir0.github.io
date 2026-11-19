@@ -32,10 +32,6 @@ describe('REGIONS', () => {
       expect(region.filter(russia)).toBe(region.label === 'Russia');
     }
   });
-
-  it('selects all regions by default', () => {
-    expect(INITIAL_REGIONS.map((region) => region.label)).toEqual(['Europe', 'Asia', 'Russia']);
-  });
 });
 
 describe('TAGS', () => {

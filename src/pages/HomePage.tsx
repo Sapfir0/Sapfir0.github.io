@@ -16,7 +16,7 @@ import './HomePage.css';
 export function HomePage() {
   const [currentTab, setCurrentTab] = useState<keyof TActivityStructure>('hiking');
   const [shouldShowMap, setShouldShowMap] = useState(false);
-  const { filtersRegionsList, setFiltersRegionsList, tagFiltersList, toggleTag } = useActivityFilters();
+  const { filtersRegionsList, setFiltersRegionsList, tagFiltersList, toggleTag, onClear } = useActivityFilters();
 
   const data = useMemo(
     () =>
@@ -65,7 +65,13 @@ export function HomePage() {
 
       {data.length === 0 ? (
         <Typography variant="h6" color="text.secondary" sx={{ textAlign: 'center', py: 8 }}>
-          No activities match the selected filters.
+          No activities.
+          {activities[currentTab].length !== 0 && (
+            <>
+              {' '}
+              But here some activities without filters! <Button onClick={onClear}>Clear filters</Button>
+            </>
+          )}
         </Typography>
       ) : (
         <Grid container spacing={3} columns={{ xs: 4, sm: 8, md: 12 }}>

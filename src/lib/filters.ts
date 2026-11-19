@@ -12,12 +12,12 @@ export const REGIONS: TRegionFilter[] = [
   {
     label: 'Asia',
     filter: (activity) => activity.region === 'Asia',
-    defaultSelected: true
+    defaultSelected: false
   },
   {
     label: 'Russia',
     filter: (activity) => activity.region === 'Russia',
-    defaultSelected: true
+    defaultSelected: false
   }
 ];
 
